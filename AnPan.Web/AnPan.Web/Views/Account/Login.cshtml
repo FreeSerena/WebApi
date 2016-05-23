@@ -1,0 +1,54 @@
+﻿@model AnPan.Web.Models.ModelAccount
+@{
+    ViewBag.Title = "每天进步一小步";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="/content/base/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h3>登录</h3>
+            <h4>Contact us today, and get reply with in 24 hours!</h4>
+            <fieldset >
+                @Html.TextBoxFor(p => p.User.ACCOUNT, new{  type = "text", required = "required", tabindex="1",placeholder = "请输入登录账号" })
+                @*<input placeholder="Your name" type="text" tabindex="1" required autofocus>*@
+            </fieldset>
+            <fieldset>
+                @Html.TextBoxFor(p => p.User.PASSWORD, new { type = "password", required = "required",tabindex="2", placeholder = "请输入密码" })
+                @*<input placeholder="Your Email Address" type="password" tabindex="2" required>*@
+            </fieldset>
+            <fieldset>
+                <label class="checkbox">
+                    @Html.CheckBoxFor(x => x.IsChecked, new { @id = "rememberPwd" })
+                    <label> 记住密码</label>
+                </label>
+            </fieldset>
+            @*<fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            </fieldset>*@
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+            </fieldset>
+        </form>
+    </div>
+    <div style="text-align:center;clear:both">
+        
+    </div>
+</body>
+</html>

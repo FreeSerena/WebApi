@@ -1,0 +1,2099 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SDSWT_CustomsModelStoreContainer" CdmEntityContainer="CustomsEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_AUTO_INFO">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_AUTO_INFO">
+        <MappingFragment StoreEntitySet="UT_AUTO_INFO">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="PROCNAME" ColumnName="PROCNAME" />
+          <ScalarProperty Name="PROCDESCRIPTION" ColumnName="PROCDESCRIPTION" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="MODELNAME" ColumnName="MODELNAME" />
+          <ScalarProperty Name="MODELURL" ColumnName="MODELURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_AUTO_PARAMS_INFO">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_AUTO_PARAMS_INFO">
+        <MappingFragment StoreEntitySet="UT_AUTO_PARAMS_INFO">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="PARAMNAME" ColumnName="PARAMNAME" />
+          <ScalarProperty Name="PARAMDESCRIPTION" ColumnName="PARAMDESCRIPTION" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="INFOOID" ColumnName="INFOOID" />
+          <ScalarProperty Name="BOOKMARKSNAMES" ColumnName="BOOKMARKSNAMES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_AUTO_REPORT_BAK">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_AUTO_REPORT_BAK">
+        <MappingFragment StoreEntitySet="UT_AUTO_REPORT_BAK">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+          <ScalarProperty Name="YEARMONTH" ColumnName="YEARMONTH" />
+          <ScalarProperty Name="CURRENCY" ColumnName="CURRENCY" />
+          <ScalarProperty Name="REPORTSNAME" ColumnName="REPORTSNAME" />
+          <ScalarProperty Name="FILEURL" ColumnName="FILEURL" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_COMPANY_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_COMPANY_CODE">
+        <MappingFragment StoreEntitySet="UT_COMPANY_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+          <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+          <ScalarProperty Name="CITYCODE" ColumnName="CITYCODE" />
+          <ScalarProperty Name="CITYNAME" ColumnName="CITYNAME" />
+          <ScalarProperty Name="AREACODE" ColumnName="AREACODE" />
+          <ScalarProperty Name="AREANAME" ColumnName="AREANAME" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_COMPANY_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_COMPANY_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_COMPANY_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_COMPANY_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_COMPANY_RULE">
+        <MappingFragment StoreEntitySet="UT_COMPANY_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCHSTR" ColumnName="MATCHSTR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CONSIGN_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CONSIGN_CODE">
+        <MappingFragment StoreEntitySet="UT_CONSIGN_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CONSIGN_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CONSIGN_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_CONSIGN_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CONSIGN_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CONSIGN_RULE">
+        <MappingFragment StoreEntitySet="UT_CONSIGN_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCHSTR" ColumnName="MATCHSTR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_COUNTRY_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_COUNTRY_CODE">
+        <MappingFragment StoreEntitySet="UT_COUNTRY_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_COUNTRY_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_COUNTRY_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_COUNTRY_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_COUNTRY_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_COUNTRY_RULE">
+        <MappingFragment StoreEntitySet="UT_COUNTRY_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCHSTR" ColumnName="MATCHSTR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CUST_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CUST_CODE">
+        <MappingFragment StoreEntitySet="UT_CUST_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CUST_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CUST_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_CUST_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CUST_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CUST_RULE">
+        <MappingFragment StoreEntitySet="UT_CUST_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCHSTR" ColumnName="MATCHSTR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DATA_CONTRAST">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DATA_CONTRAST">
+        <MappingFragment StoreEntitySet="UT_DATA_CONTRAST">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="IMPORTUSD" ColumnName="IMPORTUSD" />
+          <ScalarProperty Name="IMPORTUSDCONTRAST" ColumnName="IMPORTUSDCONTRAST" />
+          <ScalarProperty Name="IMPORTUSDPERCENT" ColumnName="IMPORTUSDPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCONRATE" ColumnName="IMPORTUSDCONRATE" />
+          <ScalarProperty Name="IMPORTUSDPULLINGPOINT" ColumnName="IMPORTUSDPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTUSDCIRCLE" ColumnName="IMPORTUSDCIRCLE" />
+          <ScalarProperty Name="IMPORTUSDCIRCLEPERCENT" ColumnName="IMPORTUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTRMB" ColumnName="IMPORTRMB" />
+          <ScalarProperty Name="IMPORTRMBCONTRAST" ColumnName="IMPORTRMBCONTRAST" />
+          <ScalarProperty Name="IMPORTRMBPERCENT" ColumnName="IMPORTRMBPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCONRATE" ColumnName="IMPORTRMBCONRATE" />
+          <ScalarProperty Name="IMPORTRMBPULLINGPOINT" ColumnName="IMPORTRMBPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTRMBCIRCLE" ColumnName="IMPORTRMBCIRCLE" />
+          <ScalarProperty Name="IMPORTRMBCIRCLEPERCENT" ColumnName="IMPORTRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTQUNT" ColumnName="IMPORTQUNT" />
+          <ScalarProperty Name="IMPORTQUNTCONTRAST" ColumnName="IMPORTQUNTCONTRAST" />
+          <ScalarProperty Name="IMPORTQUNTPERCENT" ColumnName="IMPORTQUNTPERCENT" />
+          <ScalarProperty Name="IMPORTQUNTCIRCLE" ColumnName="IMPORTQUNTCIRCLE" />
+          <ScalarProperty Name="IMPORTQUNTCIRCLEPERCENT" ColumnName="IMPORTQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTUSDUP" ColumnName="IMPORTUSDUP" />
+          <ScalarProperty Name="IMPORTUSDUPCONTRAST" ColumnName="IMPORTUSDUPCONTRAST" />
+          <ScalarProperty Name="IMPORTUSDUPPERCENT" ColumnName="IMPORTUSDUPPERCENT" />
+          <ScalarProperty Name="IMPORTUSDUPCIRCLE" ColumnName="IMPORTUSDUPCIRCLE" />
+          <ScalarProperty Name="IMPORTUSDUPCIRCLEPERCENT" ColumnName="IMPORTUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTRMBUP" ColumnName="IMPORTRMBUP" />
+          <ScalarProperty Name="IMPORTRMBUPCONTRAST" ColumnName="IMPORTRMBUPCONTRAST" />
+          <ScalarProperty Name="IMPORTRMBUPPERCENT" ColumnName="IMPORTRMBUPPERCENT" />
+          <ScalarProperty Name="IMPORTRMBUPCIRCLE" ColumnName="IMPORTRMBUPCIRCLE" />
+          <ScalarProperty Name="IMPORTRMBUPCIRCLEPERCENT" ColumnName="IMPORTRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSD" ColumnName="IMPORTSUMUSD" />
+          <ScalarProperty Name="IMPORTSUMUSDCONTRAST" ColumnName="IMPORTSUMUSDCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMUSDPERCENT" ColumnName="IMPORTSUMUSDPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCONRATE" ColumnName="IMPORTSUMUSDCONRATE" />
+          <ScalarProperty Name="IMPORTSUMUSDPULLINGPOINT" ColumnName="IMPORTSUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTSUMUSDCIRCLE" ColumnName="IMPORTSUMUSDCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMUSDCIRCLEPERCENT" ColumnName="IMPORTSUMUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMB" ColumnName="IMPORTSUMRMB" />
+          <ScalarProperty Name="IMPORTSUMRMBCONTRAST" ColumnName="IMPORTSUMRMBCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMRMBPERCENT" ColumnName="IMPORTSUMRMBPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCONRATE" ColumnName="IMPORTSUMRMBCONRATE" />
+          <ScalarProperty Name="IMPORTSUMRMBPULLINGPOINT" ColumnName="IMPORTSUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTSUMRMBCIRCLE" ColumnName="IMPORTSUMRMBCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMRMBCIRCLEPERCENT" ColumnName="IMPORTSUMRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMQUNT" ColumnName="IMPORTSUMQUNT" />
+          <ScalarProperty Name="IMPORTSUMQUNTCONTRAST" ColumnName="IMPORTSUMQUNTCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMQUNTPERCENT" ColumnName="IMPORTSUMQUNTPERCENT" />
+          <ScalarProperty Name="IMPORTSUMQUNTCIRCLE" ColumnName="IMPORTSUMQUNTCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMQUNTCIRCLEPERCENT" ColumnName="IMPORTSUMQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDUP" ColumnName="IMPORTSUMUSDUP" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCONTRAST" ColumnName="IMPORTSUMUSDUPCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMUSDUPPERCENT" ColumnName="IMPORTSUMUSDUPPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCIRCLE" ColumnName="IMPORTSUMUSDUPCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCIRCLEPERCENT" ColumnName="IMPORTSUMUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBUP" ColumnName="IMPORTSUMRMBUP" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCONTRAST" ColumnName="IMPORTSUMRMBUPCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMRMBUPPERCENT" ColumnName="IMPORTSUMRMBUPPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCIRCLE" ColumnName="IMPORTSUMRMBUPCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCIRCLEPERCENT" ColumnName="IMPORTSUMRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTUSD" ColumnName="EXPORTUSD" />
+          <ScalarProperty Name="EXPORTUSDCONTRAST" ColumnName="EXPORTUSDCONTRAST" />
+          <ScalarProperty Name="EXPORTUSDPERCENT" ColumnName="EXPORTUSDPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCONRATE" ColumnName="EXPORTUSDCONRATE" />
+          <ScalarProperty Name="EXPORTUSDPULLINGPOINT" ColumnName="EXPORTUSDPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTUSDCIRCLE" ColumnName="EXPORTUSDCIRCLE" />
+          <ScalarProperty Name="EXPORTUSDCIRCLEPERCENT" ColumnName="EXPORTUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTRMB" ColumnName="EXPORTRMB" />
+          <ScalarProperty Name="EXPORTRMBCONTRAST" ColumnName="EXPORTRMBCONTRAST" />
+          <ScalarProperty Name="EXPORTRMBPERCENT" ColumnName="EXPORTRMBPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCONRATE" ColumnName="EXPORTRMBCONRATE" />
+          <ScalarProperty Name="EXPORTRMBPULLINGPOINT" ColumnName="EXPORTRMBPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTRMBCIRCLE" ColumnName="EXPORTRMBCIRCLE" />
+          <ScalarProperty Name="EXPORTRMBCIRCLEPERCENT" ColumnName="EXPORTRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTQUNT" ColumnName="EXPORTQUNT" />
+          <ScalarProperty Name="EXPORTQUNTCONTRAST" ColumnName="EXPORTQUNTCONTRAST" />
+          <ScalarProperty Name="EXPORTQUNTPERCENT" ColumnName="EXPORTQUNTPERCENT" />
+          <ScalarProperty Name="EXPORTQUNTCIRCLE" ColumnName="EXPORTQUNTCIRCLE" />
+          <ScalarProperty Name="EXPORTQUNTCIRCLEPERCENT" ColumnName="EXPORTQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTUSDUP" ColumnName="EXPORTUSDUP" />
+          <ScalarProperty Name="EXPORTUSDUPCONTRAST" ColumnName="EXPORTUSDUPCONTRAST" />
+          <ScalarProperty Name="EXPORTUSDUPPERCENT" ColumnName="EXPORTUSDUPPERCENT" />
+          <ScalarProperty Name="EXPORTUSDUPCIRCLE" ColumnName="EXPORTUSDUPCIRCLE" />
+          <ScalarProperty Name="EXPORTUSDUPCIRCLEPERCENT" ColumnName="EXPORTUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTRMBUP" ColumnName="EXPORTRMBUP" />
+          <ScalarProperty Name="EXPORTRMBUPCONTRAST" ColumnName="EXPORTRMBUPCONTRAST" />
+          <ScalarProperty Name="EXPORTRMBUPPERCENT" ColumnName="EXPORTRMBUPPERCENT" />
+          <ScalarProperty Name="EXPORTRMBUPCIRCLE" ColumnName="EXPORTRMBUPCIRCLE" />
+          <ScalarProperty Name="EXPORTRMBUPCIRCLEPERCENT" ColumnName="EXPORTRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSD" ColumnName="EXPORTSUMUSD" />
+          <ScalarProperty Name="EXPORTSUMUSDCONTRAST" ColumnName="EXPORTSUMUSDCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMUSDPERCENT" ColumnName="EXPORTSUMUSDPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCONRATE" ColumnName="EXPORTSUMUSDCONRATE" />
+          <ScalarProperty Name="EXPORTSUMUSDPULLINGPOINT" ColumnName="EXPORTSUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTSUMUSDCIRCLE" ColumnName="EXPORTSUMUSDCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMUSDCIRCLEPERCENT" ColumnName="EXPORTSUMUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMB" ColumnName="EXPORTSUMRMB" />
+          <ScalarProperty Name="EXPORTSUMRMBCONTRAST" ColumnName="EXPORTSUMRMBCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMRMBPERCENT" ColumnName="EXPORTSUMRMBPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCONRATE" ColumnName="EXPORTSUMRMBCONRATE" />
+          <ScalarProperty Name="EXPORTSUMRMBPULLINGPOINT" ColumnName="EXPORTSUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTSUMRMBCIRCLE" ColumnName="EXPORTSUMRMBCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMRMBCIRCLEPERCENT" ColumnName="EXPORTSUMRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMQUNT" ColumnName="EXPORTSUMQUNT" />
+          <ScalarProperty Name="EXPORTSUMQUNTCONTRAST" ColumnName="EXPORTSUMQUNTCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMQUNTPERCENT" ColumnName="EXPORTSUMQUNTPERCENT" />
+          <ScalarProperty Name="EXPORTSUMQUNTCIRCLE" ColumnName="EXPORTSUMQUNTCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMQUNTCIRCLEPERCENT" ColumnName="EXPORTSUMQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDUP" ColumnName="EXPORTSUMUSDUP" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCONTRAST" ColumnName="EXPORTSUMUSDUPCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMUSDUPPERCENT" ColumnName="EXPORTSUMUSDUPPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCIRCLE" ColumnName="EXPORTSUMUSDUPCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCIRCLEPERCENT" ColumnName="EXPORTSUMUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBUP" ColumnName="EXPORTSUMRMBUP" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCONTRAST" ColumnName="EXPORTSUMRMBUPCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMRMBUPPERCENT" ColumnName="EXPORTSUMRMBUPPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCIRCLE" ColumnName="EXPORTSUMRMBUPCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCIRCLEPERCENT" ColumnName="EXPORTSUMRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IEUSD" ColumnName="IEUSD" />
+          <ScalarProperty Name="IEUSDCONTRAST" ColumnName="IEUSDCONTRAST" />
+          <ScalarProperty Name="IEUSDPERCENT" ColumnName="IEUSDPERCENT" />
+          <ScalarProperty Name="IEUSDCONRATE" ColumnName="IEUSDCONRATE" />
+          <ScalarProperty Name="IEUSDPULLINGPOINT" ColumnName="IEUSDPULLINGPOINT" />
+          <ScalarProperty Name="IEUSDCIRCLE" ColumnName="IEUSDCIRCLE" />
+          <ScalarProperty Name="IEUSDCIRCLEPERCENT" ColumnName="IEUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IERMB" ColumnName="IERMB" />
+          <ScalarProperty Name="IERMBCONTRAST" ColumnName="IERMBCONTRAST" />
+          <ScalarProperty Name="IERMBPERCENT" ColumnName="IERMBPERCENT" />
+          <ScalarProperty Name="IERMBCONRATE" ColumnName="IERMBCONRATE" />
+          <ScalarProperty Name="IERMBPULLINGPOINT" ColumnName="IERMBPULLINGPOINT" />
+          <ScalarProperty Name="IERMBCIRCLE" ColumnName="IERMBCIRCLE" />
+          <ScalarProperty Name="IERMBCIRCLEPERCENT" ColumnName="IERMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IEQUNT" ColumnName="IEQUNT" />
+          <ScalarProperty Name="IEQUNTCONTRAST" ColumnName="IEQUNTCONTRAST" />
+          <ScalarProperty Name="IEQUNTPERCENT" ColumnName="IEQUNTPERCENT" />
+          <ScalarProperty Name="IEQUNTCIRCLE" ColumnName="IEQUNTCIRCLE" />
+          <ScalarProperty Name="IEQUNTCIRCLEPERCENT" ColumnName="IEQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IEUSDUP" ColumnName="IEUSDUP" />
+          <ScalarProperty Name="IEUSDUPCONTRAST" ColumnName="IEUSDUPCONTRAST" />
+          <ScalarProperty Name="IEUSDUPPERCENT" ColumnName="IEUSDUPPERCENT" />
+          <ScalarProperty Name="IEUSDUPCIRCLE" ColumnName="IEUSDUPCIRCLE" />
+          <ScalarProperty Name="IEUSDUPCIRCLEPERCENT" ColumnName="IEUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IERMBUP" ColumnName="IERMBUP" />
+          <ScalarProperty Name="IERMBUPCONTRAST" ColumnName="IERMBUPCONTRAST" />
+          <ScalarProperty Name="IERMBUPPERCENT" ColumnName="IERMBUPPERCENT" />
+          <ScalarProperty Name="IERMBUPCIRCLE" ColumnName="IERMBUPCIRCLE" />
+          <ScalarProperty Name="IERMBUPCIRCLEPERCENT" ColumnName="IERMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMUSD" ColumnName="IESUMUSD" />
+          <ScalarProperty Name="IESUMUSDCONTRAST" ColumnName="IESUMUSDCONTRAST" />
+          <ScalarProperty Name="IESUMUSDPERCENT" ColumnName="IESUMUSDPERCENT" />
+          <ScalarProperty Name="IESUMUSDCONRATE" ColumnName="IESUMUSDCONRATE" />
+          <ScalarProperty Name="IESUMUSDPULLINGPOINT" ColumnName="IESUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="IESUMUSDCIRCLE" ColumnName="IESUMUSDCIRCLE" />
+          <ScalarProperty Name="IESUMUSDCIRCLEPERCENT" ColumnName="IESUMUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMRMB" ColumnName="IESUMRMB" />
+          <ScalarProperty Name="IESUMRMBCONTRAST" ColumnName="IESUMRMBCONTRAST" />
+          <ScalarProperty Name="IESUMRMBPERCENT" ColumnName="IESUMRMBPERCENT" />
+          <ScalarProperty Name="IESUMRMBCONRATE" ColumnName="IESUMRMBCONRATE" />
+          <ScalarProperty Name="IESUMRMBPULLINGPOINT" ColumnName="IESUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="IESUMRMBCIRCLE" ColumnName="IESUMRMBCIRCLE" />
+          <ScalarProperty Name="IESUMRMBCIRCLEPERCENT" ColumnName="IESUMRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMQUNT" ColumnName="IESUMQUNT" />
+          <ScalarProperty Name="IESUMQUNTCONTRAST" ColumnName="IESUMQUNTCONTRAST" />
+          <ScalarProperty Name="IESUMQUNTPERCENT" ColumnName="IESUMQUNTPERCENT" />
+          <ScalarProperty Name="IESUMQUNTCIRCLE" ColumnName="IESUMQUNTCIRCLE" />
+          <ScalarProperty Name="IESUMQUNTCIRCLEPERCENT" ColumnName="IESUMQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMUSDUP" ColumnName="IESUMUSDUP" />
+          <ScalarProperty Name="IESUMUSDUPCONTRAST" ColumnName="IESUMUSDUPCONTRAST" />
+          <ScalarProperty Name="IESUMUSDUPPERCENT" ColumnName="IESUMUSDUPPERCENT" />
+          <ScalarProperty Name="IESUMUSDUPCIRCLE" ColumnName="IESUMUSDUPCIRCLE" />
+          <ScalarProperty Name="IESUMUSDUPCIRCLEPERCENT" ColumnName="IESUMUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMRMBUP" ColumnName="IESUMRMBUP" />
+          <ScalarProperty Name="IESUMRMBUPCONTRAST" ColumnName="IESUMRMBUPCONTRAST" />
+          <ScalarProperty Name="IESUMRMBUPPERCENT" ColumnName="IESUMRMBUPPERCENT" />
+          <ScalarProperty Name="IESUMRMBUPCIRCLE" ColumnName="IESUMRMBUPCIRCLE" />
+          <ScalarProperty Name="IESUMRMBUPCIRCLEPERCENT" ColumnName="IESUMRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTUSDTALPERCENT" ColumnName="IMPORTUSDTALPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCONTRASTTALPERCENT" ColumnName="IMPORTUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCIRCLETALPERCENT" ColumnName="IMPORTUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IMPORTRMBTALPERCENT" ColumnName="IMPORTRMBTALPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCONTRASTTALPERCENT" ColumnName="IMPORTRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCIRCLETALPERCENT" ColumnName="IMPORTRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDTALPERCENT" ColumnName="IMPORTSUMUSDTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCONTRASTTALPERCENT" ColumnName="IMPORTSUMUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCIRCLETALPERCENT" ColumnName="IMPORTSUMUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBTALPERCENT" ColumnName="IMPORTSUMRMBTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCONTRASTTALPERCENT" ColumnName="IMPORTSUMRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCIRCLETALPERCENT" ColumnName="IMPORTSUMRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTUSDTALPERCENT" ColumnName="EXPORTUSDTALPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCONTRASTTALPERCENT" ColumnName="EXPORTUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCIRCLETALPERCENT" ColumnName="EXPORTUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTRMBTALPERCENT" ColumnName="EXPORTRMBTALPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCONTRASTTALPERCENT" ColumnName="EXPORTRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCIRCLETALPERCENT" ColumnName="EXPORTRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDTALPERCENT" ColumnName="EXPORTSUMUSDTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCONTRASTTALPERCENT" ColumnName="EXPORTSUMUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCIRCLETALPERCENT" ColumnName="EXPORTSUMUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBTALPERCENT" ColumnName="EXPORTSUMRMBTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCONTRASTTALPERCENT" ColumnName="EXPORTSUMRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCIRCLETALPERCENT" ColumnName="EXPORTSUMRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="IEUSDTALPERCENT" ColumnName="IEUSDTALPERCENT" />
+          <ScalarProperty Name="IEUSDCONTRASTTALPERCENT" ColumnName="IEUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IEUSDCIRCLETALPERCENT" ColumnName="IEUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IERMBTALPERCENT" ColumnName="IERMBTALPERCENT" />
+          <ScalarProperty Name="IERMBCONTRASTTALPERCENT" ColumnName="IERMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IERMBCIRCLETALPERCENT" ColumnName="IERMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="IESUMUSDTALPERCENT" ColumnName="IESUMUSDTALPERCENT" />
+          <ScalarProperty Name="IESUMUSDCONTRASTTALPERCENT" ColumnName="IESUMUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IESUMUSDCIRCLETALPERCENT" ColumnName="IESUMUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IESUMRMBTALPERCENT" ColumnName="IESUMRMBTALPERCENT" />
+          <ScalarProperty Name="IESUMRMBCONTRASTTALPERCENT" ColumnName="IESUMRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IESUMRMBCIRCLETALPERCENT" ColumnName="IESUMRMBCIRCLETALPERCENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DATA_CONTRASTPART">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DATA_CONTRASTPART">
+        <MappingFragment StoreEntitySet="UT_DATA_CONTRASTPART">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="IMPORTUSD" ColumnName="IMPORTUSD" />
+          <ScalarProperty Name="IMPORTUSDCONTRAST" ColumnName="IMPORTUSDCONTRAST" />
+          <ScalarProperty Name="IMPORTUSDPERCENT" ColumnName="IMPORTUSDPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCONRATE" ColumnName="IMPORTUSDCONRATE" />
+          <ScalarProperty Name="IMPORTUSDPULLINGPOINT" ColumnName="IMPORTUSDPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTUSDCIRCLE" ColumnName="IMPORTUSDCIRCLE" />
+          <ScalarProperty Name="IMPORTUSDCIRCLEPERCENT" ColumnName="IMPORTUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTRMB" ColumnName="IMPORTRMB" />
+          <ScalarProperty Name="IMPORTRMBCONTRAST" ColumnName="IMPORTRMBCONTRAST" />
+          <ScalarProperty Name="IMPORTRMBPERCENT" ColumnName="IMPORTRMBPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCONRATE" ColumnName="IMPORTRMBCONRATE" />
+          <ScalarProperty Name="IMPORTRMBPULLINGPOINT" ColumnName="IMPORTRMBPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTRMBCIRCLE" ColumnName="IMPORTRMBCIRCLE" />
+          <ScalarProperty Name="IMPORTRMBCIRCLEPERCENT" ColumnName="IMPORTRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTQUNT" ColumnName="IMPORTQUNT" />
+          <ScalarProperty Name="IMPORTQUNTCONTRAST" ColumnName="IMPORTQUNTCONTRAST" />
+          <ScalarProperty Name="IMPORTQUNTPERCENT" ColumnName="IMPORTQUNTPERCENT" />
+          <ScalarProperty Name="IMPORTQUNTCIRCLE" ColumnName="IMPORTQUNTCIRCLE" />
+          <ScalarProperty Name="IMPORTQUNTCIRCLEPERCENT" ColumnName="IMPORTQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTUSDUP" ColumnName="IMPORTUSDUP" />
+          <ScalarProperty Name="IMPORTUSDUPCONTRAST" ColumnName="IMPORTUSDUPCONTRAST" />
+          <ScalarProperty Name="IMPORTUSDUPPERCENT" ColumnName="IMPORTUSDUPPERCENT" />
+          <ScalarProperty Name="IMPORTUSDUPCIRCLE" ColumnName="IMPORTUSDUPCIRCLE" />
+          <ScalarProperty Name="IMPORTUSDUPCIRCLEPERCENT" ColumnName="IMPORTUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTRMBUP" ColumnName="IMPORTRMBUP" />
+          <ScalarProperty Name="IMPORTRMBUPCONTRAST" ColumnName="IMPORTRMBUPCONTRAST" />
+          <ScalarProperty Name="IMPORTRMBUPPERCENT" ColumnName="IMPORTRMBUPPERCENT" />
+          <ScalarProperty Name="IMPORTRMBUPCIRCLE" ColumnName="IMPORTRMBUPCIRCLE" />
+          <ScalarProperty Name="IMPORTRMBUPCIRCLEPERCENT" ColumnName="IMPORTRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSD" ColumnName="IMPORTSUMUSD" />
+          <ScalarProperty Name="IMPORTSUMUSDCONTRAST" ColumnName="IMPORTSUMUSDCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMUSDPERCENT" ColumnName="IMPORTSUMUSDPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCONRATE" ColumnName="IMPORTSUMUSDCONRATE" />
+          <ScalarProperty Name="IMPORTSUMUSDPULLINGPOINT" ColumnName="IMPORTSUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTSUMUSDCIRCLE" ColumnName="IMPORTSUMUSDCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMUSDCIRCLEPERCENT" ColumnName="IMPORTSUMUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMB" ColumnName="IMPORTSUMRMB" />
+          <ScalarProperty Name="IMPORTSUMRMBCONTRAST" ColumnName="IMPORTSUMRMBCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMRMBPERCENT" ColumnName="IMPORTSUMRMBPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCONRATE" ColumnName="IMPORTSUMRMBCONRATE" />
+          <ScalarProperty Name="IMPORTSUMRMBPULLINGPOINT" ColumnName="IMPORTSUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTSUMRMBCIRCLE" ColumnName="IMPORTSUMRMBCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMRMBCIRCLEPERCENT" ColumnName="IMPORTSUMRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMQUNT" ColumnName="IMPORTSUMQUNT" />
+          <ScalarProperty Name="IMPORTSUMQUNTCONTRAST" ColumnName="IMPORTSUMQUNTCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMQUNTPERCENT" ColumnName="IMPORTSUMQUNTPERCENT" />
+          <ScalarProperty Name="IMPORTSUMQUNTCIRCLE" ColumnName="IMPORTSUMQUNTCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMQUNTCIRCLEPERCENT" ColumnName="IMPORTSUMQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDUP" ColumnName="IMPORTSUMUSDUP" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCONTRAST" ColumnName="IMPORTSUMUSDUPCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMUSDUPPERCENT" ColumnName="IMPORTSUMUSDUPPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCIRCLE" ColumnName="IMPORTSUMUSDUPCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCIRCLEPERCENT" ColumnName="IMPORTSUMUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBUP" ColumnName="IMPORTSUMRMBUP" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCONTRAST" ColumnName="IMPORTSUMRMBUPCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMRMBUPPERCENT" ColumnName="IMPORTSUMRMBUPPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCIRCLE" ColumnName="IMPORTSUMRMBUPCIRCLE" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCIRCLEPERCENT" ColumnName="IMPORTSUMRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTUSD" ColumnName="EXPORTUSD" />
+          <ScalarProperty Name="EXPORTUSDCONTRAST" ColumnName="EXPORTUSDCONTRAST" />
+          <ScalarProperty Name="EXPORTUSDPERCENT" ColumnName="EXPORTUSDPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCONRATE" ColumnName="EXPORTUSDCONRATE" />
+          <ScalarProperty Name="EXPORTUSDPULLINGPOINT" ColumnName="EXPORTUSDPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTUSDCIRCLE" ColumnName="EXPORTUSDCIRCLE" />
+          <ScalarProperty Name="EXPORTUSDCIRCLEPERCENT" ColumnName="EXPORTUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTRMB" ColumnName="EXPORTRMB" />
+          <ScalarProperty Name="EXPORTRMBCONTRAST" ColumnName="EXPORTRMBCONTRAST" />
+          <ScalarProperty Name="EXPORTRMBPERCENT" ColumnName="EXPORTRMBPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCONRATE" ColumnName="EXPORTRMBCONRATE" />
+          <ScalarProperty Name="EXPORTRMBPULLINGPOINT" ColumnName="EXPORTRMBPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTRMBCIRCLE" ColumnName="EXPORTRMBCIRCLE" />
+          <ScalarProperty Name="EXPORTRMBCIRCLEPERCENT" ColumnName="EXPORTRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTQUNT" ColumnName="EXPORTQUNT" />
+          <ScalarProperty Name="EXPORTQUNTCONTRAST" ColumnName="EXPORTQUNTCONTRAST" />
+          <ScalarProperty Name="EXPORTQUNTPERCENT" ColumnName="EXPORTQUNTPERCENT" />
+          <ScalarProperty Name="EXPORTQUNTCIRCLE" ColumnName="EXPORTQUNTCIRCLE" />
+          <ScalarProperty Name="EXPORTQUNTCIRCLEPERCENT" ColumnName="EXPORTQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTUSDUP" ColumnName="EXPORTUSDUP" />
+          <ScalarProperty Name="EXPORTUSDUPCONTRAST" ColumnName="EXPORTUSDUPCONTRAST" />
+          <ScalarProperty Name="EXPORTUSDUPPERCENT" ColumnName="EXPORTUSDUPPERCENT" />
+          <ScalarProperty Name="EXPORTUSDUPCIRCLE" ColumnName="EXPORTUSDUPCIRCLE" />
+          <ScalarProperty Name="EXPORTUSDUPCIRCLEPERCENT" ColumnName="EXPORTUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTRMBUP" ColumnName="EXPORTRMBUP" />
+          <ScalarProperty Name="EXPORTRMBUPCONTRAST" ColumnName="EXPORTRMBUPCONTRAST" />
+          <ScalarProperty Name="EXPORTRMBUPPERCENT" ColumnName="EXPORTRMBUPPERCENT" />
+          <ScalarProperty Name="EXPORTRMBUPCIRCLE" ColumnName="EXPORTRMBUPCIRCLE" />
+          <ScalarProperty Name="EXPORTRMBUPCIRCLEPERCENT" ColumnName="EXPORTRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSD" ColumnName="EXPORTSUMUSD" />
+          <ScalarProperty Name="EXPORTSUMUSDCONTRAST" ColumnName="EXPORTSUMUSDCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMUSDPERCENT" ColumnName="EXPORTSUMUSDPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCONRATE" ColumnName="EXPORTSUMUSDCONRATE" />
+          <ScalarProperty Name="EXPORTSUMUSDPULLINGPOINT" ColumnName="EXPORTSUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTSUMUSDCIRCLE" ColumnName="EXPORTSUMUSDCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMUSDCIRCLEPERCENT" ColumnName="EXPORTSUMUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMB" ColumnName="EXPORTSUMRMB" />
+          <ScalarProperty Name="EXPORTSUMRMBCONTRAST" ColumnName="EXPORTSUMRMBCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMRMBPERCENT" ColumnName="EXPORTSUMRMBPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCONRATE" ColumnName="EXPORTSUMRMBCONRATE" />
+          <ScalarProperty Name="EXPORTSUMRMBPULLINGPOINT" ColumnName="EXPORTSUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTSUMRMBCIRCLE" ColumnName="EXPORTSUMRMBCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMRMBCIRCLEPERCENT" ColumnName="EXPORTSUMRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMQUNT" ColumnName="EXPORTSUMQUNT" />
+          <ScalarProperty Name="EXPORTSUMQUNTCONTRAST" ColumnName="EXPORTSUMQUNTCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMQUNTPERCENT" ColumnName="EXPORTSUMQUNTPERCENT" />
+          <ScalarProperty Name="EXPORTSUMQUNTCIRCLE" ColumnName="EXPORTSUMQUNTCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMQUNTCIRCLEPERCENT" ColumnName="EXPORTSUMQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDUP" ColumnName="EXPORTSUMUSDUP" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCONTRAST" ColumnName="EXPORTSUMUSDUPCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMUSDUPPERCENT" ColumnName="EXPORTSUMUSDUPPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCIRCLE" ColumnName="EXPORTSUMUSDUPCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCIRCLEPERCENT" ColumnName="EXPORTSUMUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBUP" ColumnName="EXPORTSUMRMBUP" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCONTRAST" ColumnName="EXPORTSUMRMBUPCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMRMBUPPERCENT" ColumnName="EXPORTSUMRMBUPPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCIRCLE" ColumnName="EXPORTSUMRMBUPCIRCLE" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCIRCLEPERCENT" ColumnName="EXPORTSUMRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IEUSD" ColumnName="IEUSD" />
+          <ScalarProperty Name="IEUSDCONTRAST" ColumnName="IEUSDCONTRAST" />
+          <ScalarProperty Name="IEUSDPERCENT" ColumnName="IEUSDPERCENT" />
+          <ScalarProperty Name="IEUSDCONRATE" ColumnName="IEUSDCONRATE" />
+          <ScalarProperty Name="IEUSDPULLINGPOINT" ColumnName="IEUSDPULLINGPOINT" />
+          <ScalarProperty Name="IEUSDCIRCLE" ColumnName="IEUSDCIRCLE" />
+          <ScalarProperty Name="IEUSDCIRCLEPERCENT" ColumnName="IEUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IERMB" ColumnName="IERMB" />
+          <ScalarProperty Name="IERMBCONTRAST" ColumnName="IERMBCONTRAST" />
+          <ScalarProperty Name="IERMBPERCENT" ColumnName="IERMBPERCENT" />
+          <ScalarProperty Name="IERMBCONRATE" ColumnName="IERMBCONRATE" />
+          <ScalarProperty Name="IERMBPULLINGPOINT" ColumnName="IERMBPULLINGPOINT" />
+          <ScalarProperty Name="IERMBCIRCLE" ColumnName="IERMBCIRCLE" />
+          <ScalarProperty Name="IERMBCIRCLEPERCENT" ColumnName="IERMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IEQUNT" ColumnName="IEQUNT" />
+          <ScalarProperty Name="IEQUNTCONTRAST" ColumnName="IEQUNTCONTRAST" />
+          <ScalarProperty Name="IEQUNTPERCENT" ColumnName="IEQUNTPERCENT" />
+          <ScalarProperty Name="IEQUNTCIRCLE" ColumnName="IEQUNTCIRCLE" />
+          <ScalarProperty Name="IEQUNTCIRCLEPERCENT" ColumnName="IEQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IEUSDUP" ColumnName="IEUSDUP" />
+          <ScalarProperty Name="IEUSDUPCONTRAST" ColumnName="IEUSDUPCONTRAST" />
+          <ScalarProperty Name="IEUSDUPPERCENT" ColumnName="IEUSDUPPERCENT" />
+          <ScalarProperty Name="IEUSDUPCIRCLE" ColumnName="IEUSDUPCIRCLE" />
+          <ScalarProperty Name="IEUSDUPCIRCLEPERCENT" ColumnName="IEUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IERMBUP" ColumnName="IERMBUP" />
+          <ScalarProperty Name="IERMBUPCONTRAST" ColumnName="IERMBUPCONTRAST" />
+          <ScalarProperty Name="IERMBUPPERCENT" ColumnName="IERMBUPPERCENT" />
+          <ScalarProperty Name="IERMBUPCIRCLE" ColumnName="IERMBUPCIRCLE" />
+          <ScalarProperty Name="IERMBUPCIRCLEPERCENT" ColumnName="IERMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMUSD" ColumnName="IESUMUSD" />
+          <ScalarProperty Name="IESUMUSDCONTRAST" ColumnName="IESUMUSDCONTRAST" />
+          <ScalarProperty Name="IESUMUSDPERCENT" ColumnName="IESUMUSDPERCENT" />
+          <ScalarProperty Name="IESUMUSDCONRATE" ColumnName="IESUMUSDCONRATE" />
+          <ScalarProperty Name="IESUMUSDPULLINGPOINT" ColumnName="IESUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="IESUMUSDCIRCLE" ColumnName="IESUMUSDCIRCLE" />
+          <ScalarProperty Name="IESUMUSDCIRCLEPERCENT" ColumnName="IESUMUSDCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMRMB" ColumnName="IESUMRMB" />
+          <ScalarProperty Name="IESUMRMBCONTRAST" ColumnName="IESUMRMBCONTRAST" />
+          <ScalarProperty Name="IESUMRMBPERCENT" ColumnName="IESUMRMBPERCENT" />
+          <ScalarProperty Name="IESUMRMBCONRATE" ColumnName="IESUMRMBCONRATE" />
+          <ScalarProperty Name="IESUMRMBPULLINGPOINT" ColumnName="IESUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="IESUMRMBCIRCLE" ColumnName="IESUMRMBCIRCLE" />
+          <ScalarProperty Name="IESUMRMBCIRCLEPERCENT" ColumnName="IESUMRMBCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMQUNT" ColumnName="IESUMQUNT" />
+          <ScalarProperty Name="IESUMQUNTCONTRAST" ColumnName="IESUMQUNTCONTRAST" />
+          <ScalarProperty Name="IESUMQUNTPERCENT" ColumnName="IESUMQUNTPERCENT" />
+          <ScalarProperty Name="IESUMQUNTCIRCLE" ColumnName="IESUMQUNTCIRCLE" />
+          <ScalarProperty Name="IESUMQUNTCIRCLEPERCENT" ColumnName="IESUMQUNTCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMUSDUP" ColumnName="IESUMUSDUP" />
+          <ScalarProperty Name="IESUMUSDUPCONTRAST" ColumnName="IESUMUSDUPCONTRAST" />
+          <ScalarProperty Name="IESUMUSDUPPERCENT" ColumnName="IESUMUSDUPPERCENT" />
+          <ScalarProperty Name="IESUMUSDUPCIRCLE" ColumnName="IESUMUSDUPCIRCLE" />
+          <ScalarProperty Name="IESUMUSDUPCIRCLEPERCENT" ColumnName="IESUMUSDUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IESUMRMBUP" ColumnName="IESUMRMBUP" />
+          <ScalarProperty Name="IESUMRMBUPCONTRAST" ColumnName="IESUMRMBUPCONTRAST" />
+          <ScalarProperty Name="IESUMRMBUPPERCENT" ColumnName="IESUMRMBUPPERCENT" />
+          <ScalarProperty Name="IESUMRMBUPCIRCLE" ColumnName="IESUMRMBUPCIRCLE" />
+          <ScalarProperty Name="IESUMRMBUPCIRCLEPERCENT" ColumnName="IESUMRMBUPCIRCLEPERCENT" />
+          <ScalarProperty Name="IMPORTUSDTALPERCENT" ColumnName="IMPORTUSDTALPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCONTRASTTALPERCENT" ColumnName="IMPORTUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCIRCLETALPERCENT" ColumnName="IMPORTUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IMPORTRMBTALPERCENT" ColumnName="IMPORTRMBTALPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCONTRASTTALPERCENT" ColumnName="IMPORTRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCIRCLETALPERCENT" ColumnName="IMPORTRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDTALPERCENT" ColumnName="IMPORTSUMUSDTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCONTRASTTALPERCENT" ColumnName="IMPORTSUMUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCIRCLETALPERCENT" ColumnName="IMPORTSUMUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBTALPERCENT" ColumnName="IMPORTSUMRMBTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCONTRASTTALPERCENT" ColumnName="IMPORTSUMRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCIRCLETALPERCENT" ColumnName="IMPORTSUMRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTUSDTALPERCENT" ColumnName="EXPORTUSDTALPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCONTRASTTALPERCENT" ColumnName="EXPORTUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCIRCLETALPERCENT" ColumnName="EXPORTUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTRMBTALPERCENT" ColumnName="EXPORTRMBTALPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCONTRASTTALPERCENT" ColumnName="EXPORTRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCIRCLETALPERCENT" ColumnName="EXPORTRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDTALPERCENT" ColumnName="EXPORTSUMUSDTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCONTRASTTALPERCENT" ColumnName="EXPORTSUMUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCIRCLETALPERCENT" ColumnName="EXPORTSUMUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBTALPERCENT" ColumnName="EXPORTSUMRMBTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCONTRASTTALPERCENT" ColumnName="EXPORTSUMRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCIRCLETALPERCENT" ColumnName="EXPORTSUMRMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="IEUSDTALPERCENT" ColumnName="IEUSDTALPERCENT" />
+          <ScalarProperty Name="IEUSDCONTRASTTALPERCENT" ColumnName="IEUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IEUSDCIRCLETALPERCENT" ColumnName="IEUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IERMBTALPERCENT" ColumnName="IERMBTALPERCENT" />
+          <ScalarProperty Name="IERMBCONTRASTTALPERCENT" ColumnName="IERMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IERMBCIRCLETALPERCENT" ColumnName="IERMBCIRCLETALPERCENT" />
+          <ScalarProperty Name="IESUMUSDTALPERCENT" ColumnName="IESUMUSDTALPERCENT" />
+          <ScalarProperty Name="IESUMUSDCONTRASTTALPERCENT" ColumnName="IESUMUSDCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IESUMUSDCIRCLETALPERCENT" ColumnName="IESUMUSDCIRCLETALPERCENT" />
+          <ScalarProperty Name="IESUMRMBTALPERCENT" ColumnName="IESUMRMBTALPERCENT" />
+          <ScalarProperty Name="IESUMRMBCONTRASTTALPERCENT" ColumnName="IESUMRMBCONTRASTTALPERCENT" />
+          <ScalarProperty Name="IESUMRMBCIRCLETALPERCENT" ColumnName="IESUMRMBCIRCLETALPERCENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DATA_FIXED">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DATA_FIXED">
+        <MappingFragment StoreEntitySet="UT_DATA_FIXED">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="USD" ColumnName="USD" />
+          <ScalarProperty Name="USDCONTRAST" ColumnName="USDCONTRAST" />
+          <ScalarProperty Name="USDPERCENT" ColumnName="USDPERCENT" />
+          <ScalarProperty Name="USDSUM" ColumnName="USDSUM" />
+          <ScalarProperty Name="USDCONTRASTSUM" ColumnName="USDCONTRASTSUM" />
+          <ScalarProperty Name="USDSUMPERCENT" ColumnName="USDSUMPERCENT" />
+          <ScalarProperty Name="RMB" ColumnName="RMB" />
+          <ScalarProperty Name="RMBCONTRAST" ColumnName="RMBCONTRAST" />
+          <ScalarProperty Name="RMBPERCENT" ColumnName="RMBPERCENT" />
+          <ScalarProperty Name="RMBSUM" ColumnName="RMBSUM" />
+          <ScalarProperty Name="RMBCONTRASTSUM" ColumnName="RMBCONTRASTSUM" />
+          <ScalarProperty Name="RMBSUMPERCENT" ColumnName="RMBSUMPERCENT" />
+          <ScalarProperty Name="QUNT" ColumnName="QUNT" />
+          <ScalarProperty Name="QUNTCONTRAST" ColumnName="QUNTCONTRAST" />
+          <ScalarProperty Name="QUNTPERCENT" ColumnName="QUNTPERCENT" />
+          <ScalarProperty Name="QUNTSUM" ColumnName="QUNTSUM" />
+          <ScalarProperty Name="QUNTCONTRASTSUM" ColumnName="QUNTCONTRASTSUM" />
+          <ScalarProperty Name="QUNTSUMPERCENT" ColumnName="QUNTSUMPERCENT" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="ROWINDEX" ColumnName="ROWINDEX" />
+          <ScalarProperty Name="TOPPERCENT" ColumnName="TOPPERCENT" />
+          <ScalarProperty Name="TOPSUMPERCENT" ColumnName="TOPSUMPERCENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DATA_MULTI">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DATA_MULTI">
+        <MappingFragment StoreEntitySet="UT_DATA_MULTI">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="QUNT" ColumnName="QUNT" />
+          <ScalarProperty Name="QUNTCONTRAST" ColumnName="QUNTCONTRAST" />
+          <ScalarProperty Name="QUNTPERCENT" ColumnName="QUNTPERCENT" />
+          <ScalarProperty Name="QUNTSUM" ColumnName="QUNTSUM" />
+          <ScalarProperty Name="QUNTCONTRASTSUM" ColumnName="QUNTCONTRASTSUM" />
+          <ScalarProperty Name="QUNTSUMPERCENT" ColumnName="QUNTSUMPERCENT" />
+          <ScalarProperty Name="USD" ColumnName="USD" />
+          <ScalarProperty Name="USDCONTRAST" ColumnName="USDCONTRAST" />
+          <ScalarProperty Name="USDPERCENT" ColumnName="USDPERCENT" />
+          <ScalarProperty Name="USDSUM" ColumnName="USDSUM" />
+          <ScalarProperty Name="USDCONTRASTSUM" ColumnName="USDCONTRASTSUM" />
+          <ScalarProperty Name="USDSUMPERCENT" ColumnName="USDSUMPERCENT" />
+          <ScalarProperty Name="RMB" ColumnName="RMB" />
+          <ScalarProperty Name="RMBCONTRAST" ColumnName="RMBCONTRAST" />
+          <ScalarProperty Name="RMBPERCENT" ColumnName="RMBPERCENT" />
+          <ScalarProperty Name="RMBSUM" ColumnName="RMBSUM" />
+          <ScalarProperty Name="RMBCONTRASTSUM" ColumnName="RMBCONTRASTSUM" />
+          <ScalarProperty Name="RMBSUMPERCENT" ColumnName="RMBSUMPERCENT" />
+          <ScalarProperty Name="COMPANY1" ColumnName="COMPANY1" />
+          <ScalarProperty Name="COMPANY2" ColumnName="COMPANY2" />
+          <ScalarProperty Name="COMPANY3" ColumnName="COMPANY3" />
+          <ScalarProperty Name="COMPANY4" ColumnName="COMPANY4" />
+          <ScalarProperty Name="COMPANY5" ColumnName="COMPANY5" />
+          <ScalarProperty Name="COMPANY6" ColumnName="COMPANY6" />
+          <ScalarProperty Name="COMPANY7" ColumnName="COMPANY7" />
+          <ScalarProperty Name="COMPANY8" ColumnName="COMPANY8" />
+          <ScalarProperty Name="COMPANY9" ColumnName="COMPANY9" />
+          <ScalarProperty Name="COMPANY10" ColumnName="COMPANY10" />
+          <ScalarProperty Name="COMPANY11" ColumnName="COMPANY11" />
+          <ScalarProperty Name="COMPANY12" ColumnName="COMPANY12" />
+          <ScalarProperty Name="COMPANYCODE" ColumnName="COMPANYCODE" />
+          <ScalarProperty Name="HS1" ColumnName="HS1" />
+          <ScalarProperty Name="HS2" ColumnName="HS2" />
+          <ScalarProperty Name="HS3" ColumnName="HS3" />
+          <ScalarProperty Name="HS4" ColumnName="HS4" />
+          <ScalarProperty Name="HS5" ColumnName="HS5" />
+          <ScalarProperty Name="HS6" ColumnName="HS6" />
+          <ScalarProperty Name="HS7" ColumnName="HS7" />
+          <ScalarProperty Name="HS8" ColumnName="HS8" />
+          <ScalarProperty Name="HS9" ColumnName="HS9" />
+          <ScalarProperty Name="HS10" ColumnName="HS10" />
+          <ScalarProperty Name="HS11" ColumnName="HS11" />
+          <ScalarProperty Name="HS12" ColumnName="HS12" />
+          <ScalarProperty Name="HSCODE" ColumnName="HSCODE" />
+          <ScalarProperty Name="CUST1" ColumnName="CUST1" />
+          <ScalarProperty Name="CUST2" ColumnName="CUST2" />
+          <ScalarProperty Name="CUST3" ColumnName="CUST3" />
+          <ScalarProperty Name="CUST4" ColumnName="CUST4" />
+          <ScalarProperty Name="CUST5" ColumnName="CUST5" />
+          <ScalarProperty Name="CUST6" ColumnName="CUST6" />
+          <ScalarProperty Name="CUST7" ColumnName="CUST7" />
+          <ScalarProperty Name="CUST8" ColumnName="CUST8" />
+          <ScalarProperty Name="CUST9" ColumnName="CUST9" />
+          <ScalarProperty Name="CUST10" ColumnName="CUST10" />
+          <ScalarProperty Name="CUST11" ColumnName="CUST11" />
+          <ScalarProperty Name="CUST12" ColumnName="CUST12" />
+          <ScalarProperty Name="CUSTCODE" ColumnName="CUSTCODE" />
+          <ScalarProperty Name="COUNTRY1" ColumnName="COUNTRY1" />
+          <ScalarProperty Name="COUNTRY2" ColumnName="COUNTRY2" />
+          <ScalarProperty Name="COUNTRY3" ColumnName="COUNTRY3" />
+          <ScalarProperty Name="COUNTRY4" ColumnName="COUNTRY4" />
+          <ScalarProperty Name="COUNTRY5" ColumnName="COUNTRY5" />
+          <ScalarProperty Name="COUNTRY6" ColumnName="COUNTRY6" />
+          <ScalarProperty Name="COUNTRY7" ColumnName="COUNTRY7" />
+          <ScalarProperty Name="COUNTRY8" ColumnName="COUNTRY8" />
+          <ScalarProperty Name="COUNTRY9" ColumnName="COUNTRY9" />
+          <ScalarProperty Name="COUNTRY10" ColumnName="COUNTRY10" />
+          <ScalarProperty Name="COUNTRY11" ColumnName="COUNTRY11" />
+          <ScalarProperty Name="COUNTRY12" ColumnName="COUNTRY12" />
+          <ScalarProperty Name="COUNTRYCODE" ColumnName="COUNTRYCODE" />
+          <ScalarProperty Name="CONSIGN1" ColumnName="CONSIGN1" />
+          <ScalarProperty Name="CONSIGN2" ColumnName="CONSIGN2" />
+          <ScalarProperty Name="CONSIGN3" ColumnName="CONSIGN3" />
+          <ScalarProperty Name="CONSIGN4" ColumnName="CONSIGN4" />
+          <ScalarProperty Name="CONSIGN5" ColumnName="CONSIGN5" />
+          <ScalarProperty Name="CONSIGN6" ColumnName="CONSIGN6" />
+          <ScalarProperty Name="CONSIGN7" ColumnName="CONSIGN7" />
+          <ScalarProperty Name="CONSIGN8" ColumnName="CONSIGN8" />
+          <ScalarProperty Name="CONSIGN9" ColumnName="CONSIGN9" />
+          <ScalarProperty Name="CONSIGN10" ColumnName="CONSIGN10" />
+          <ScalarProperty Name="CONSIGN11" ColumnName="CONSIGN11" />
+          <ScalarProperty Name="CONSIGN12" ColumnName="CONSIGN12" />
+          <ScalarProperty Name="CONSIGNCODE" ColumnName="CONSIGNCODE" />
+          <ScalarProperty Name="TRADE1" ColumnName="TRADE1" />
+          <ScalarProperty Name="TRADE2" ColumnName="TRADE2" />
+          <ScalarProperty Name="TRADE3" ColumnName="TRADE3" />
+          <ScalarProperty Name="TRADE4" ColumnName="TRADE4" />
+          <ScalarProperty Name="TRADE5" ColumnName="TRADE5" />
+          <ScalarProperty Name="TRADE6" ColumnName="TRADE6" />
+          <ScalarProperty Name="TRADE7" ColumnName="TRADE7" />
+          <ScalarProperty Name="TRADE8" ColumnName="TRADE8" />
+          <ScalarProperty Name="TRADE9" ColumnName="TRADE9" />
+          <ScalarProperty Name="TRADE10" ColumnName="TRADE10" />
+          <ScalarProperty Name="TRADE11" ColumnName="TRADE11" />
+          <ScalarProperty Name="TRADE12" ColumnName="TRADE12" />
+          <ScalarProperty Name="TRADECODE" ColumnName="TRADECODE" />
+          <ScalarProperty Name="TRANSPORT1" ColumnName="TRANSPORT1" />
+          <ScalarProperty Name="TRANSPORT2" ColumnName="TRANSPORT2" />
+          <ScalarProperty Name="TRANSPORT3" ColumnName="TRANSPORT3" />
+          <ScalarProperty Name="TRANSPORT4" ColumnName="TRANSPORT4" />
+          <ScalarProperty Name="TRANSPORT5" ColumnName="TRANSPORT5" />
+          <ScalarProperty Name="TRANSPORT6" ColumnName="TRANSPORT6" />
+          <ScalarProperty Name="TRANSPORT7" ColumnName="TRANSPORT7" />
+          <ScalarProperty Name="TRANSPORT8" ColumnName="TRANSPORT8" />
+          <ScalarProperty Name="TRANSPORT9" ColumnName="TRANSPORT9" />
+          <ScalarProperty Name="TRANSPORT10" ColumnName="TRANSPORT10" />
+          <ScalarProperty Name="TRANSPORT11" ColumnName="TRANSPORT11" />
+          <ScalarProperty Name="TRANSPORT12" ColumnName="TRANSPORT12" />
+          <ScalarProperty Name="TRANSPORTCODE" ColumnName="TRANSPORTCODE" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="ROWINDEX" ColumnName="ROWINDEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DATA_PRICE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DATA_PRICE">
+        <MappingFragment StoreEntitySet="UT_DATA_PRICE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="IMPORTQUNT" ColumnName="IMPORTQUNT" />
+          <ScalarProperty Name="IMPORTQUNTSTANDARD" ColumnName="IMPORTQUNTSTANDARD" />
+          <ScalarProperty Name="IMPORTUSD" ColumnName="IMPORTUSD" />
+          <ScalarProperty Name="IMPORTRMB" ColumnName="IMPORTRMB" />
+          <ScalarProperty Name="IMPORTUSDSTANDARD" ColumnName="IMPORTUSDSTANDARD" />
+          <ScalarProperty Name="IMPORTRMBSTANDARD" ColumnName="IMPORTRMBSTANDARD" />
+          <ScalarProperty Name="IMPORTIPMONTH" ColumnName="IMPORTIPMONTH" />
+          <ScalarProperty Name="IMPORTIQMONTH" ColumnName="IMPORTIQMONTH" />
+          <ScalarProperty Name="IMPORTIPQMONTH" ColumnName="IMPORTIPQMONTH" />
+          <ScalarProperty Name="IMPORTSUMQ" ColumnName="IMPORTSUMQ" />
+          <ScalarProperty Name="IMPORTSUMQSTANDARD" ColumnName="IMPORTSUMQSTANDARD" />
+          <ScalarProperty Name="IMPORTSUMM" ColumnName="IMPORTSUMM" />
+          <ScalarProperty Name="IMPORTRMBSUMM" ColumnName="IMPORTRMBSUMM" />
+          <ScalarProperty Name="IMPORTSUMMSTANDARD" ColumnName="IMPORTSUMMSTANDARD" />
+          <ScalarProperty Name="IMPORTRMBSUMMSTANDARD" ColumnName="IMPORTRMBSUMMSTANDARD" />
+          <ScalarProperty Name="IMPORTIPTOTAL" ColumnName="IMPORTIPTOTAL" />
+          <ScalarProperty Name="IMPORTIQTOTAL" ColumnName="IMPORTIQTOTAL" />
+          <ScalarProperty Name="IMPORTIPQTOTAL" ColumnName="IMPORTIPQTOTAL" />
+          <ScalarProperty Name="IMPORTPRICEPERCENTMONTH" ColumnName="IMPORTPRICEPERCENTMONTH" />
+          <ScalarProperty Name="IMPORTPSMONTH" ColumnName="IMPORTPSMONTH" />
+          <ScalarProperty Name="IMPORTLSMONTH" ColumnName="IMPORTLSMONTH" />
+          <ScalarProperty Name="IMPORTFSMONTH" ColumnName="IMPORTFSMONTH" />
+          <ScalarProperty Name="IMPORTPRICEPERCENTTOTAL" ColumnName="IMPORTPRICEPERCENTTOTAL" />
+          <ScalarProperty Name="IMPORTPSTOTAL" ColumnName="IMPORTPSTOTAL" />
+          <ScalarProperty Name="IMPORTLSTOTAL" ColumnName="IMPORTLSTOTAL" />
+          <ScalarProperty Name="IMPORTFSTOTAL" ColumnName="IMPORTFSTOTAL" />
+          <ScalarProperty Name="EXPORTQUNT" ColumnName="EXPORTQUNT" />
+          <ScalarProperty Name="EXPORTQUNTSTANDARD" ColumnName="EXPORTQUNTSTANDARD" />
+          <ScalarProperty Name="EXPORTUSD" ColumnName="EXPORTUSD" />
+          <ScalarProperty Name="EXPORTRMB" ColumnName="EXPORTRMB" />
+          <ScalarProperty Name="EXPORTUSDSTANDARD" ColumnName="EXPORTUSDSTANDARD" />
+          <ScalarProperty Name="EXPORTRMBSTANDARD" ColumnName="EXPORTRMBSTANDARD" />
+          <ScalarProperty Name="EXPORTIPMONTH" ColumnName="EXPORTIPMONTH" />
+          <ScalarProperty Name="EXPORTIQMONTH" ColumnName="EXPORTIQMONTH" />
+          <ScalarProperty Name="EXPORTIPQMONTH" ColumnName="EXPORTIPQMONTH" />
+          <ScalarProperty Name="EXPORTSUMQ" ColumnName="EXPORTSUMQ" />
+          <ScalarProperty Name="EXPORTSUMQSTANDARD" ColumnName="EXPORTSUMQSTANDARD" />
+          <ScalarProperty Name="EXPORTSUMM" ColumnName="EXPORTSUMM" />
+          <ScalarProperty Name="EXPORTRMBSUMM" ColumnName="EXPORTRMBSUMM" />
+          <ScalarProperty Name="EXPORTSUMMSTANDARD" ColumnName="EXPORTSUMMSTANDARD" />
+          <ScalarProperty Name="EXPORTRMBSUMMSTANDARD" ColumnName="EXPORTRMBSUMMSTANDARD" />
+          <ScalarProperty Name="EXPORTIPTOTAL" ColumnName="EXPORTIPTOTAL" />
+          <ScalarProperty Name="EXPORTIQTOTAL" ColumnName="EXPORTIQTOTAL" />
+          <ScalarProperty Name="EXPORTIPQTOTAL" ColumnName="EXPORTIPQTOTAL" />
+          <ScalarProperty Name="EXPORTPRICEPERCENTMONTH" ColumnName="EXPORTPRICEPERCENTMONTH" />
+          <ScalarProperty Name="EXPORTPSMONTH" ColumnName="EXPORTPSMONTH" />
+          <ScalarProperty Name="EXPORTLSMONTH" ColumnName="EXPORTLSMONTH" />
+          <ScalarProperty Name="EXPORTFSMONTH" ColumnName="EXPORTFSMONTH" />
+          <ScalarProperty Name="EXPORTPRICEPERCENTTOTAL" ColumnName="EXPORTPRICEPERCENTTOTAL" />
+          <ScalarProperty Name="EXPORTPSTOTAL" ColumnName="EXPORTPSTOTAL" />
+          <ScalarProperty Name="EXPORTLSTOTAL" ColumnName="EXPORTLSTOTAL" />
+          <ScalarProperty Name="EXPORTFSTOTAL" ColumnName="EXPORTFSTOTAL" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="PROCESSUNIT" ColumnName="PROCESSUNIT" />
+          <ScalarProperty Name="IMPORTIPRMBMONTH" ColumnName="IMPORTIPRMBMONTH" />
+          <ScalarProperty Name="IMPORTIQRMBMONTH" ColumnName="IMPORTIQRMBMONTH" />
+          <ScalarProperty Name="IMPORTIPQRMBMONTH" ColumnName="IMPORTIPQRMBMONTH" />
+          <ScalarProperty Name="IMPORTIPRMBTOTAL" ColumnName="IMPORTIPRMBTOTAL" />
+          <ScalarProperty Name="IMPORTIQRMBTOTAL" ColumnName="IMPORTIQRMBTOTAL" />
+          <ScalarProperty Name="IMPORTIPQRMBTOTAL" ColumnName="IMPORTIPQRMBTOTAL" />
+          <ScalarProperty Name="IMPORTRMBPRICEPERCENTMONTH" ColumnName="IMPORTRMBPRICEPERCENTMONTH" />
+          <ScalarProperty Name="IMPORTPSRMBMONTH" ColumnName="IMPORTPSRMBMONTH" />
+          <ScalarProperty Name="IMPORTLSRMBMONTH" ColumnName="IMPORTLSRMBMONTH" />
+          <ScalarProperty Name="IMPORTFSRMBMONTH" ColumnName="IMPORTFSRMBMONTH" />
+          <ScalarProperty Name="IMPORTRMBPRICEPERCENTTOTAL" ColumnName="IMPORTRMBPRICEPERCENTTOTAL" />
+          <ScalarProperty Name="IMPORTPSRMBTOTAL" ColumnName="IMPORTPSRMBTOTAL" />
+          <ScalarProperty Name="IMPORTLSRMBTOTAL" ColumnName="IMPORTLSRMBTOTAL" />
+          <ScalarProperty Name="IMPORTFSRMBTOTAL" ColumnName="IMPORTFSRMBTOTAL" />
+          <ScalarProperty Name="EXPORTIPRMBMONTH" ColumnName="EXPORTIPRMBMONTH" />
+          <ScalarProperty Name="EXPORTIQRMBMONTH" ColumnName="EXPORTIQRMBMONTH" />
+          <ScalarProperty Name="EXPORTIPQRMBMONTH" ColumnName="EXPORTIPQRMBMONTH" />
+          <ScalarProperty Name="EXPORTIPRMBTOTAL" ColumnName="EXPORTIPRMBTOTAL" />
+          <ScalarProperty Name="EXPORTIQRMBTOTAL" ColumnName="EXPORTIQRMBTOTAL" />
+          <ScalarProperty Name="EXPORTIPQRMBTOTAL" ColumnName="EXPORTIPQRMBTOTAL" />
+          <ScalarProperty Name="EXPORTRMBPRICEPERCENTMONTH" ColumnName="EXPORTRMBPRICEPERCENTMONTH" />
+          <ScalarProperty Name="EXPORTPSRMBMONTH" ColumnName="EXPORTPSRMBMONTH" />
+          <ScalarProperty Name="EXPORTLSRMBMONTH" ColumnName="EXPORTLSRMBMONTH" />
+          <ScalarProperty Name="EXPORTFSRMBMONTH" ColumnName="EXPORTFSRMBMONTH" />
+          <ScalarProperty Name="EXPORTRMBPRICEPERCENTTOTAL" ColumnName="EXPORTRMBPRICEPERCENTTOTAL" />
+          <ScalarProperty Name="EXPORTPSRMBTOTAL" ColumnName="EXPORTPSRMBTOTAL" />
+          <ScalarProperty Name="EXPORTLSRMBTOTAL" ColumnName="EXPORTLSRMBTOTAL" />
+          <ScalarProperty Name="EXPORTFSRMBTOTAL" ColumnName="EXPORTFSRMBTOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DATA_TREND">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DATA_TREND">
+        <MappingFragment StoreEntitySet="UT_DATA_TREND">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="YEARMONTH" ColumnName="YEARMONTH" />
+          <ScalarProperty Name="IMPORTUSD" ColumnName="IMPORTUSD" />
+          <ScalarProperty Name="IMPORTUSDCONTRAST" ColumnName="IMPORTUSDCONTRAST" />
+          <ScalarProperty Name="IMPORTUSDPERCENT" ColumnName="IMPORTUSDPERCENT" />
+          <ScalarProperty Name="IMPORTUSDCONRATE" ColumnName="IMPORTUSDCONRATE" />
+          <ScalarProperty Name="IMPORTUSDPULLINGPOINT" ColumnName="IMPORTUSDPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTRMB" ColumnName="IMPORTRMB" />
+          <ScalarProperty Name="IMPORTRMBCONTRAST" ColumnName="IMPORTRMBCONTRAST" />
+          <ScalarProperty Name="IMPORTRMBPERCENT" ColumnName="IMPORTRMBPERCENT" />
+          <ScalarProperty Name="IMPORTRMBCONRATE" ColumnName="IMPORTRMBCONRATE" />
+          <ScalarProperty Name="IMPORTRMBPULLINGPOINT" ColumnName="IMPORTRMBPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTQUNT" ColumnName="IMPORTQUNT" />
+          <ScalarProperty Name="IMPORTQUNTCONTRAST" ColumnName="IMPORTQUNTCONTRAST" />
+          <ScalarProperty Name="IMPORTQUNTPERCENT" ColumnName="IMPORTQUNTPERCENT" />
+          <ScalarProperty Name="IMPORTUSDUP" ColumnName="IMPORTUSDUP" />
+          <ScalarProperty Name="IMPORTUSDUPCONTRAST" ColumnName="IMPORTUSDUPCONTRAST" />
+          <ScalarProperty Name="IMPORTUSDUPPERCENT" ColumnName="IMPORTUSDUPPERCENT" />
+          <ScalarProperty Name="IMPORTRMBUP" ColumnName="IMPORTRMBUP" />
+          <ScalarProperty Name="IMPORTRMBUPCONTRAST" ColumnName="IMPORTRMBUPCONTRAST" />
+          <ScalarProperty Name="IMPORTRMBUPPERCENT" ColumnName="IMPORTRMBUPPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSD" ColumnName="IMPORTSUMUSD" />
+          <ScalarProperty Name="IMPORTSUMUSDCONTRAST" ColumnName="IMPORTSUMUSDCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMUSDPERCENT" ColumnName="IMPORTSUMUSDPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDCONRATE" ColumnName="IMPORTSUMUSDCONRATE" />
+          <ScalarProperty Name="IMPORTSUMUSDPULLINGPOINT" ColumnName="IMPORTSUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTSUMRMB" ColumnName="IMPORTSUMRMB" />
+          <ScalarProperty Name="IMPORTSUMRMBCONTRAST" ColumnName="IMPORTSUMRMBCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMRMBPERCENT" ColumnName="IMPORTSUMRMBPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBCONRATE" ColumnName="IMPORTSUMRMBCONRATE" />
+          <ScalarProperty Name="IMPORTSUMRMBPULLINGPOINT" ColumnName="IMPORTSUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="IMPORTSUMQUNT" ColumnName="IMPORTSUMQUNT" />
+          <ScalarProperty Name="IMPORTSUMQUNTCONTRAST" ColumnName="IMPORTSUMQUNTCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMQUNTPERCENT" ColumnName="IMPORTSUMQUNTPERCENT" />
+          <ScalarProperty Name="IMPORTSUMUSDUP" ColumnName="IMPORTSUMUSDUP" />
+          <ScalarProperty Name="IMPORTSUMUSDUPCONTRAST" ColumnName="IMPORTSUMUSDUPCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMUSDUPPERCENT" ColumnName="IMPORTSUMUSDUPPERCENT" />
+          <ScalarProperty Name="IMPORTSUMRMBUP" ColumnName="IMPORTSUMRMBUP" />
+          <ScalarProperty Name="IMPORTSUMRMBUPCONTRAST" ColumnName="IMPORTSUMRMBUPCONTRAST" />
+          <ScalarProperty Name="IMPORTSUMRMBUPPERCENT" ColumnName="IMPORTSUMRMBUPPERCENT" />
+          <ScalarProperty Name="EXPORTUSD" ColumnName="EXPORTUSD" />
+          <ScalarProperty Name="EXPORTUSDCONTRAST" ColumnName="EXPORTUSDCONTRAST" />
+          <ScalarProperty Name="EXPORTUSDPERCENT" ColumnName="EXPORTUSDPERCENT" />
+          <ScalarProperty Name="EXPORTUSDCONRATE" ColumnName="EXPORTUSDCONRATE" />
+          <ScalarProperty Name="EXPORTUSDPULLINGPOINT" ColumnName="EXPORTUSDPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTRMB" ColumnName="EXPORTRMB" />
+          <ScalarProperty Name="EXPORTRMBCONTRAST" ColumnName="EXPORTRMBCONTRAST" />
+          <ScalarProperty Name="EXPORTRMBPERCENT" ColumnName="EXPORTRMBPERCENT" />
+          <ScalarProperty Name="EXPORTRMBCONRATE" ColumnName="EXPORTRMBCONRATE" />
+          <ScalarProperty Name="EXPORTRMBPULLINGPOINT" ColumnName="EXPORTRMBPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTQUNT" ColumnName="EXPORTQUNT" />
+          <ScalarProperty Name="EXPORTQUNTCONTRAST" ColumnName="EXPORTQUNTCONTRAST" />
+          <ScalarProperty Name="EXPORTQUNTPERCENT" ColumnName="EXPORTQUNTPERCENT" />
+          <ScalarProperty Name="EXPORTUSDUP" ColumnName="EXPORTUSDUP" />
+          <ScalarProperty Name="EXPORTUSDUPCONTRAST" ColumnName="EXPORTUSDUPCONTRAST" />
+          <ScalarProperty Name="EXPORTUSDUPPERCENT" ColumnName="EXPORTUSDUPPERCENT" />
+          <ScalarProperty Name="EXPORTRMBUP" ColumnName="EXPORTRMBUP" />
+          <ScalarProperty Name="EXPORTRMBUPCONTRAST" ColumnName="EXPORTRMBUPCONTRAST" />
+          <ScalarProperty Name="EXPORTRMBUPPERCENT" ColumnName="EXPORTRMBUPPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSD" ColumnName="EXPORTSUMUSD" />
+          <ScalarProperty Name="EXPORTSUMUSDCONTRAST" ColumnName="EXPORTSUMUSDCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMUSDPERCENT" ColumnName="EXPORTSUMUSDPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDCONRATE" ColumnName="EXPORTSUMUSDCONRATE" />
+          <ScalarProperty Name="EXPORTSUMUSDPULLINGPOINT" ColumnName="EXPORTSUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTSUMRMB" ColumnName="EXPORTSUMRMB" />
+          <ScalarProperty Name="EXPORTSUMRMBCONTRAST" ColumnName="EXPORTSUMRMBCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMRMBPERCENT" ColumnName="EXPORTSUMRMBPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBCONRATE" ColumnName="EXPORTSUMRMBCONRATE" />
+          <ScalarProperty Name="EXPORTSUMRMBPULLINGPOINT" ColumnName="EXPORTSUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="EXPORTSUMQUNT" ColumnName="EXPORTSUMQUNT" />
+          <ScalarProperty Name="EXPORTSUMQUNTCONTRAST" ColumnName="EXPORTSUMQUNTCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMQUNTPERCENT" ColumnName="EXPORTSUMQUNTPERCENT" />
+          <ScalarProperty Name="EXPORTSUMUSDUP" ColumnName="EXPORTSUMUSDUP" />
+          <ScalarProperty Name="EXPORTSUMUSDUPCONTRAST" ColumnName="EXPORTSUMUSDUPCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMUSDUPPERCENT" ColumnName="EXPORTSUMUSDUPPERCENT" />
+          <ScalarProperty Name="EXPORTSUMRMBUP" ColumnName="EXPORTSUMRMBUP" />
+          <ScalarProperty Name="EXPORTSUMRMBUPCONTRAST" ColumnName="EXPORTSUMRMBUPCONTRAST" />
+          <ScalarProperty Name="EXPORTSUMRMBUPPERCENT" ColumnName="EXPORTSUMRMBUPPERCENT" />
+          <ScalarProperty Name="IEUSD" ColumnName="IEUSD" />
+          <ScalarProperty Name="IEUSDCONTRAST" ColumnName="IEUSDCONTRAST" />
+          <ScalarProperty Name="IEUSDPERCENT" ColumnName="IEUSDPERCENT" />
+          <ScalarProperty Name="IEUSDCONRATE" ColumnName="IEUSDCONRATE" />
+          <ScalarProperty Name="IEUSDPULLINGPOINT" ColumnName="IEUSDPULLINGPOINT" />
+          <ScalarProperty Name="IERMB" ColumnName="IERMB" />
+          <ScalarProperty Name="IERMBCONTRAST" ColumnName="IERMBCONTRAST" />
+          <ScalarProperty Name="IERMBPERCENT" ColumnName="IERMBPERCENT" />
+          <ScalarProperty Name="IERMBCONRATE" ColumnName="IERMBCONRATE" />
+          <ScalarProperty Name="IERMBPULLINGPOINT" ColumnName="IERMBPULLINGPOINT" />
+          <ScalarProperty Name="IEQUNT" ColumnName="IEQUNT" />
+          <ScalarProperty Name="IEQUNTCONTRAST" ColumnName="IEQUNTCONTRAST" />
+          <ScalarProperty Name="IEQUNTPERCENT" ColumnName="IEQUNTPERCENT" />
+          <ScalarProperty Name="IEUSDUP" ColumnName="IEUSDUP" />
+          <ScalarProperty Name="IEUSDUPCONTRAST" ColumnName="IEUSDUPCONTRAST" />
+          <ScalarProperty Name="IEUSDUPPERCENT" ColumnName="IEUSDUPPERCENT" />
+          <ScalarProperty Name="IERMBUP" ColumnName="IERMBUP" />
+          <ScalarProperty Name="IERMBUPCONTRAST" ColumnName="IERMBUPCONTRAST" />
+          <ScalarProperty Name="IERMBUPPERCENT" ColumnName="IERMBUPPERCENT" />
+          <ScalarProperty Name="IESUMUSD" ColumnName="IESUMUSD" />
+          <ScalarProperty Name="IESUMUSDCONTRAST" ColumnName="IESUMUSDCONTRAST" />
+          <ScalarProperty Name="IESUMUSDPERCENT" ColumnName="IESUMUSDPERCENT" />
+          <ScalarProperty Name="IESUMUSDCONRATE" ColumnName="IESUMUSDCONRATE" />
+          <ScalarProperty Name="IESUMUSDPULLINGPOINT" ColumnName="IESUMUSDPULLINGPOINT" />
+          <ScalarProperty Name="IESUMRMB" ColumnName="IESUMRMB" />
+          <ScalarProperty Name="IESUMRMBCONTRAST" ColumnName="IESUMRMBCONTRAST" />
+          <ScalarProperty Name="IESUMRMBPERCENT" ColumnName="IESUMRMBPERCENT" />
+          <ScalarProperty Name="IESUMRMBCONRATE" ColumnName="IESUMRMBCONRATE" />
+          <ScalarProperty Name="IESUMRMBPULLINGPOINT" ColumnName="IESUMRMBPULLINGPOINT" />
+          <ScalarProperty Name="IESUMQUNT" ColumnName="IESUMQUNT" />
+          <ScalarProperty Name="IESUMQUNTCONTRAST" ColumnName="IESUMQUNTCONTRAST" />
+          <ScalarProperty Name="IESUMQUNTPERCENT" ColumnName="IESUMQUNTPERCENT" />
+          <ScalarProperty Name="IESUMUSDUP" ColumnName="IESUMUSDUP" />
+          <ScalarProperty Name="IESUMUSDUPCONTRAST" ColumnName="IESUMUSDUPCONTRAST" />
+          <ScalarProperty Name="IESUMUSDUPPERCENT" ColumnName="IESUMUSDUPPERCENT" />
+          <ScalarProperty Name="IESUMRMBUP" ColumnName="IESUMRMBUP" />
+          <ScalarProperty Name="IESUMRMBUPCONTRAST" ColumnName="IESUMRMBUPCONTRAST" />
+          <ScalarProperty Name="IESUMRMBUPPERCENT" ColumnName="IESUMRMBUPPERCENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_DIRECTORY_SHAREDPOWER">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_DIRECTORY_SHAREDPOWER">
+        <MappingFragment StoreEntitySet="UT_DIRECTORY_SHAREDPOWER">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="ISOPERATE" ColumnName="ISOPERATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_HS_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_HS_CODE">
+        <MappingFragment StoreEntitySet="UT_HS_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_HS_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_HS_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_HS_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_HS_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_HS_RULE">
+        <MappingFragment StoreEntitySet="UT_HS_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCHSTR" ColumnName="MATCHSTR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORT_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORT_DATE">
+        <MappingFragment StoreEntitySet="UT_IMPORT_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="IMPORTDATE" ColumnName="IMPORTDATE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="IMPORTTYPE" ColumnName="IMPORTTYPE" />
+          <ScalarProperty Name="IMPORTTABLE" ColumnName="IMPORTTABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORT_FORMAT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORT_FORMAT">
+        <MappingFragment StoreEntitySet="UT_IMPORT_FORMAT">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="FORMATNAME" ColumnName="FORMATNAME" />
+          <ScalarProperty Name="ISDEFAULT" ColumnName="ISDEFAULT" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORT_FORMATDT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORT_FORMATDT">
+        <MappingFragment StoreEntitySet="UT_IMPORT_FORMATDT">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="FOID" ColumnName="FOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="CODESTART" ColumnName="CODESTART" />
+          <ScalarProperty Name="CODELENGTH" ColumnName="CODELENGTH" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORTCODE_VIEW">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORTCODE_VIEW">
+        <MappingFragment StoreEntitySet="UT_IMPORTCODE_VIEW">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORTDATA_LOG">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORTDATA_LOG">
+        <MappingFragment StoreEntitySet="UT_IMPORTDATA_LOG">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="IMPORTTYPE" ColumnName="IMPORTTYPE" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="DATADATE" ColumnName="DATADATE" />
+          <ScalarProperty Name="DATADATE2" ColumnName="DATADATE2" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="IMPORTDATE" ColumnName="IMPORTDATE" />
+          <ScalarProperty Name="OPERATETYPE" ColumnName="OPERATETYPE" />
+          <ScalarProperty Name="RECORDNUM" ColumnName="RECORDNUM" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="LOGTYPE" ColumnName="LOGTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORTDATA_RIGHT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORTDATA_RIGHT">
+        <MappingFragment StoreEntitySet="UT_IMPORTDATA_RIGHT">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="IMPORTDATE" ColumnName="IMPORTDATE" />
+          <ScalarProperty Name="ROLEGUID" ColumnName="ROLEGUID" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORTDATA_VIEW_E">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORTDATA_VIEW_E">
+        <MappingFragment StoreEntitySet="UT_IMPORTDATA_VIEW_E">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="COMPANYCODE" ColumnName="COMPANYCODE" />
+          <ScalarProperty Name="HSCODE" ColumnName="HSCODE" />
+          <ScalarProperty Name="CONSIGNCODE" ColumnName="CONSIGNCODE" />
+          <ScalarProperty Name="TRADECODE" ColumnName="TRADECODE" />
+          <ScalarProperty Name="COUNTRYCODE" ColumnName="COUNTRYCODE" />
+          <ScalarProperty Name="CUSTCODE" ColumnName="CUSTCODE" />
+          <ScalarProperty Name="TRANSPORTCODE" ColumnName="TRANSPORTCODE" />
+          <ScalarProperty Name="QUNT" ColumnName="QUNT" />
+          <ScalarProperty Name="SUMQ" ColumnName="SUMQ" />
+          <ScalarProperty Name="USD" ColumnName="USD" />
+          <ScalarProperty Name="SUMM" ColumnName="SUMM" />
+          <ScalarProperty Name="RMB" ColumnName="RMB" />
+          <ScalarProperty Name="RMBSUMM" ColumnName="RMBSUMM" />
+          <ScalarProperty Name="UNITCODE" ColumnName="UNITCODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_IMPORTDATA_VIEW_I">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_IMPORTDATA_VIEW_I">
+        <MappingFragment StoreEntitySet="UT_IMPORTDATA_VIEW_I">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="COMPANYCODE" ColumnName="COMPANYCODE" />
+          <ScalarProperty Name="HSCODE" ColumnName="HSCODE" />
+          <ScalarProperty Name="CONSIGNCODE" ColumnName="CONSIGNCODE" />
+          <ScalarProperty Name="TRADECODE" ColumnName="TRADECODE" />
+          <ScalarProperty Name="COUNTRYCODE" ColumnName="COUNTRYCODE" />
+          <ScalarProperty Name="CUSTCODE" ColumnName="CUSTCODE" />
+          <ScalarProperty Name="TRANSPORTCODE" ColumnName="TRANSPORTCODE" />
+          <ScalarProperty Name="QUNT" ColumnName="QUNT" />
+          <ScalarProperty Name="SUMQ" ColumnName="SUMQ" />
+          <ScalarProperty Name="USD" ColumnName="USD" />
+          <ScalarProperty Name="SUMM" ColumnName="SUMM" />
+          <ScalarProperty Name="RMB" ColumnName="RMB" />
+          <ScalarProperty Name="RMBSUMM" ColumnName="RMBSUMM" />
+          <ScalarProperty Name="UNITCODE" ColumnName="UNITCODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_CONTRAST_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_CONTRAST_DATE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_CONTRAST_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SEARCHYEAR" ColumnName="SEARCHYEAR" />
+          <ScalarProperty Name="SEARCHMONTH" ColumnName="SEARCHMONTH" />
+          <ScalarProperty Name="CONTRASTYEAR" ColumnName="CONTRASTYEAR" />
+          <ScalarProperty Name="CONTRASTMONTH" ColumnName="CONTRASTMONTH" />
+          <ScalarProperty Name="CIRCLEYEAR" ColumnName="CIRCLEYEAR" />
+          <ScalarProperty Name="CIRCLEMONTH" ColumnName="CIRCLEMONTH" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="ISCONTRAST" ColumnName="ISCONTRAST" />
+          <ScalarProperty Name="ISCIRCLE" ColumnName="ISCIRCLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_CONTRAST_NODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_CONTRAST_NODE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_CONTRAST_NODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="ISDIRECTORY" ColumnName="ISDIRECTORY" />
+          <ScalarProperty Name="PERCENTAGE" ColumnName="PERCENTAGE" />
+          <ScalarProperty Name="DIRECTORYID" ColumnName="DIRECTORYID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_CONTRASTPART_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_CONTRASTPART_DATE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_CONTRASTPART_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SEARCHYEAR" ColumnName="SEARCHYEAR" />
+          <ScalarProperty Name="SEARCHMONTH" ColumnName="SEARCHMONTH" />
+          <ScalarProperty Name="CONTRASTYEAR" ColumnName="CONTRASTYEAR" />
+          <ScalarProperty Name="CONTRASTMONTH" ColumnName="CONTRASTMONTH" />
+          <ScalarProperty Name="CIRCLEYEAR" ColumnName="CIRCLEYEAR" />
+          <ScalarProperty Name="CIRCLEMONTH" ColumnName="CIRCLEMONTH" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="ISCONTRAST" ColumnName="ISCONTRAST" />
+          <ScalarProperty Name="ISCIRCLE" ColumnName="ISCIRCLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_CONTRASTPART_NODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_CONTRASTPART_NODE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_CONTRASTPART_NODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="ISDIRECTORY" ColumnName="ISDIRECTORY" />
+          <ScalarProperty Name="PERCENTAGE" ColumnName="PERCENTAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_SEARCH_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="NODETYPE" ColumnName="NODETYPE" />
+          <ScalarProperty Name="DIRECTORYCATEGORY" ColumnName="DIRECTORYCATEGORY" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+          <ScalarProperty Name="DIRECTORYOID" ColumnName="DIRECTORYOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_EXPDIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_EXPDIRECTORY">
+        <MappingFragment StoreEntitySet="UT_SEARCH_EXPDIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="NODETYPE" ColumnName="NODETYPE" />
+          <ScalarProperty Name="DIRECTORYCATEGORY" ColumnName="DIRECTORYCATEGORY" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_FIXED_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_FIXED_DATE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_FIXED_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SELECTYEAR" ColumnName="SELECTYEAR" />
+          <ScalarProperty Name="SELECTMONTH" ColumnName="SELECTMONTH" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_FIXED_NODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_FIXED_NODE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_FIXED_NODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="ISDIRECTORY" ColumnName="ISDIRECTORY" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_MULTIDIM_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_MULTIDIM_DATE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_MULTIDIM_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SELECTYEAR" ColumnName="SELECTYEAR" />
+          <ScalarProperty Name="SELECTMONTH" ColumnName="SELECTMONTH" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_MULTIDIM_NODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_MULTIDIM_NODE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_MULTIDIM_NODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="ISDIRECTORY" ColumnName="ISDIRECTORY" />
+          <ScalarProperty Name="ORDERINDEX" ColumnName="ORDERINDEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_PRICE_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_PRICE_DATE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_PRICE_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SELECTYEAR" ColumnName="SELECTYEAR" />
+          <ScalarProperty Name="REPORTDATE" ColumnName="REPORTDATE" />
+          <ScalarProperty Name="STANDARDDATE" ColumnName="STANDARDDATE" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+          <ScalarProperty Name="CALCTYPE" ColumnName="CALCTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_PRICE_NODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_PRICE_NODE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_PRICE_NODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="DIRECTORYID" ColumnName="DIRECTORYID" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="ISDIRECTORY" ColumnName="ISDIRECTORY" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_SUITE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_SUITE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_SUITE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SEARCHTYPE" ColumnName="SEARCHTYPE" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_SUITE_SELECTED_DATA">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_SUITE_SELECTED_DATA">
+        <MappingFragment StoreEntitySet="UT_SEARCH_SUITE_SELECTED_DATA">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_TREND_DATE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_TREND_DATE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_TREND_DATE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SEARCHDATE" ColumnName="SEARCHDATE" />
+          <ScalarProperty Name="ISCONTRAST" ColumnName="ISCONTRAST" />
+          <ScalarProperty Name="DATATYPE" ColumnName="DATATYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_TREND_DATEDT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_TREND_DATEDT">
+        <MappingFragment StoreEntitySet="UT_SEARCH_TREND_DATEDT">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="TRENDOID" ColumnName="TRENDOID" />
+          <ScalarProperty Name="CONTRASTYEAR" ColumnName="CONTRASTYEAR" />
+          <ScalarProperty Name="CONTRASTMONTH" ColumnName="CONTRASTMONTH" />
+          <ScalarProperty Name="SEARCHYEAR" ColumnName="SEARCHYEAR" />
+          <ScalarProperty Name="SEARCHMONTH" ColumnName="SEARCHMONTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_TREND_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_TREND_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_SEARCH_TREND_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SEARCH_TREND_NODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SEARCH_TREND_NODE">
+        <MappingFragment StoreEntitySet="UT_SEARCH_TREND_NODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="DIRECTORYID" ColumnName="DIRECTORYID" />
+          <ScalarProperty Name="ISDIRECTORY" ColumnName="ISDIRECTORY" />
+          <ScalarProperty Name="LEVELS" ColumnName="LEVELS" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_CODE">
+        <MappingFragment StoreEntitySet="UT_SYS_CODE">
+          <ScalarProperty Name="CODEID" ColumnName="CODEID" />
+          <ScalarProperty Name="CODEGROUPID" ColumnName="CODEGROUPID" />
+          <ScalarProperty Name="CODENAME" ColumnName="CODENAME" />
+          <ScalarProperty Name="CODEVALUE" ColumnName="CODEVALUE" />
+          <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+          <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_CODEGROUP">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_CODEGROUP">
+        <MappingFragment StoreEntitySet="UT_SYS_CODEGROUP">
+          <ScalarProperty Name="CODEGROUPID" ColumnName="CODEGROUPID" />
+          <ScalarProperty Name="CODEGROUPKEY" ColumnName="CODEGROUPKEY" />
+          <ScalarProperty Name="CODEGROUPNAME" ColumnName="CODEGROUPNAME" />
+          <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+          <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_EMPLOYEE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_EMPLOYEE">
+        <MappingFragment StoreEntitySet="UT_SYS_EMPLOYEE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ORGID" ColumnName="ORGID" />
+          <ScalarProperty Name="USERGUID" ColumnName="USERGUID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="MOBILEPHONE" ColumnName="MOBILEPHONE" />
+          <ScalarProperty Name="OFFICEPHONE" ColumnName="OFFICEPHONE" />
+          <ScalarProperty Name="HOMEPHONE" ColumnName="HOMEPHONE" />
+          <ScalarProperty Name="DUTYID" ColumnName="DUTYID" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="ISDEPARTURE" ColumnName="ISDEPARTURE" />
+          <ScalarProperty Name="DEPARTURETYPE" ColumnName="DEPARTURETYPE" />
+          <ScalarProperty Name="DEPARTUREDATE" ColumnName="DEPARTUREDATE" />
+          <ScalarProperty Name="DEPARTUREREASON" ColumnName="DEPARTUREREASON" />
+          <ScalarProperty Name="DEPARTUREREMARK" ColumnName="DEPARTUREREMARK" />
+          <ScalarProperty Name="ENTRYDATE" ColumnName="ENTRYDATE" />
+          <ScalarProperty Name="ANNUALLEAVE" ColumnName="ANNUALLEAVE" />
+          <ScalarProperty Name="OFFDAYS" ColumnName="OFFDAYS" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="EMERGENCYCONTACT" ColumnName="EMERGENCYCONTACT" />
+          <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+          <ScalarProperty Name="ELECTRONICSIGNATURE" ColumnName="ELECTRONICSIGNATURE" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_LOG">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_LOG">
+        <MappingFragment StoreEntitySet="UT_SYS_LOG">
+          <ScalarProperty Name="LOGID" ColumnName="LOGID" />
+          <ScalarProperty Name="LOGTIME" ColumnName="LOGTIME" />
+          <ScalarProperty Name="USERCODE" ColumnName="USERCODE" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="MACHINEIP" ColumnName="MACHINEIP" />
+          <ScalarProperty Name="OPERATEMODULE" ColumnName="OPERATEMODULE" />
+          <ScalarProperty Name="OPERATETYPE" ColumnName="OPERATETYPE" />
+          <ScalarProperty Name="OPERATEDESC" ColumnName="OPERATEDESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_LOG4NET">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_LOG4NET">
+        <MappingFragment StoreEntitySet="UT_SYS_LOG4NET">
+          <ScalarProperty Name="LOGID" ColumnName="LOGID" />
+          <ScalarProperty Name="LOGTIME" ColumnName="LOGTIME" />
+          <ScalarProperty Name="THREAD" ColumnName="THREAD" />
+          <ScalarProperty Name="LOGLEVEL" ColumnName="LOGLEVEL" />
+          <ScalarProperty Name="LOGGER" ColumnName="LOGGER" />
+          <ScalarProperty Name="LOGGUID" ColumnName="LOGGUID" />
+          <ScalarProperty Name="USERCODE" ColumnName="USERCODE" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="MACHINEIP" ColumnName="MACHINEIP" />
+          <ScalarProperty Name="MACHINENAME" ColumnName="MACHINENAME" />
+          <ScalarProperty Name="SOURCETYPE" ColumnName="SOURCETYPE" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="EXCEPTION" ColumnName="EXCEPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_ORGANIZATION">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_ORGANIZATION">
+        <MappingFragment StoreEntitySet="UT_SYS_ORGANIZATION">
+          <ScalarProperty Name="ORGID" ColumnName="ORGID" />
+          <ScalarProperty Name="ORGGUID" ColumnName="ORGGUID" />
+          <ScalarProperty Name="ORGNAME" ColumnName="ORGNAME" />
+          <ScalarProperty Name="ORGTYPE" ColumnName="ORGTYPE" />
+          <ScalarProperty Name="ORGNUMBER" ColumnName="ORGNUMBER" />
+          <ScalarProperty Name="ORGPARENTID" ColumnName="ORGPARENTID" />
+          <ScalarProperty Name="ORGEMAIL" ColumnName="ORGEMAIL" />
+          <ScalarProperty Name="ORGPHONE" ColumnName="ORGPHONE" />
+          <ScalarProperty Name="ORGADDRESS" ColumnName="ORGADDRESS" />
+          <ScalarProperty Name="ORGLEGAL" ColumnName="ORGLEGAL" />
+          <ScalarProperty Name="ORGFAX" ColumnName="ORGFAX" />
+          <ScalarProperty Name="CHARGEPERSON" ColumnName="CHARGEPERSON" />
+          <ScalarProperty Name="ORGLINKMAN" ColumnName="ORGLINKMAN" />
+          <ScalarProperty Name="LINKPHONE" ColumnName="LINKPHONE" />
+          <ScalarProperty Name="LINKMOBILE" ColumnName="LINKMOBILE" />
+          <ScalarProperty Name="LINKEMAIL" ColumnName="LINKEMAIL" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="ORGLEVEL" ColumnName="ORGLEVEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_PERSONALDESKTOP">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_PERSONALDESKTOP">
+        <MappingFragment StoreEntitySet="UT_SYS_PERSONALDESKTOP">
+          <ScalarProperty Name="PERSONALDESKTOPID" ColumnName="PERSONALDESKTOPID" />
+          <ScalarProperty Name="SYSTEMRIGHTID" ColumnName="SYSTEMRIGHTID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="SYSTEMID" ColumnName="SYSTEMID" />
+          <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+          <ScalarProperty Name="DISPLAYTYPE" ColumnName="DISPLAYTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_RIGHT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_RIGHT">
+        <MappingFragment StoreEntitySet="UT_SYS_RIGHT">
+          <ScalarProperty Name="RIGHTID" ColumnName="RIGHTID" />
+          <ScalarProperty Name="SYSTEMID" ColumnName="SYSTEMID" />
+          <ScalarProperty Name="PARENTRIGHTID" ColumnName="PARENTRIGHTID" />
+          <ScalarProperty Name="RIGHTNAME" ColumnName="RIGHTNAME" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="ISADMINRGIHT" ColumnName="ISADMINRGIHT" />
+          <ScalarProperty Name="NAVIGATEURL" ColumnName="NAVIGATEURL" />
+          <ScalarProperty Name="NAVIGATEURL2" ColumnName="NAVIGATEURL2" />
+          <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+          <ScalarProperty Name="SIMAGEURL" ColumnName="SIMAGEURL" />
+          <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+          <ScalarProperty Name="ISDISPLAY" ColumnName="ISDISPLAY" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="TARGET" ColumnName="TARGET" />
+          <ScalarProperty Name="RIGHTLEVEL" ColumnName="RIGHTLEVEL" />
+          <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_ROLE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_ROLE">
+        <MappingFragment StoreEntitySet="UT_SYS_ROLE">
+          <ScalarProperty Name="ROLEID" ColumnName="ROLEID" />
+          <ScalarProperty Name="ROLEGUID" ColumnName="ROLEGUID" />
+          <ScalarProperty Name="SYSTEMID" ColumnName="SYSTEMID" />
+          <ScalarProperty Name="ROLENAME" ColumnName="ROLENAME" />
+          <ScalarProperty Name="ROLETYPE" ColumnName="ROLETYPE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISADMIN" ColumnName="ISADMIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_ROLERIGHT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_ROLERIGHT">
+        <MappingFragment StoreEntitySet="UT_SYS_ROLERIGHT">
+          <ScalarProperty Name="RoleRightID" ColumnName="RoleRightID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="SystemRightID" ColumnName="SystemRightID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_SYSTEM">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_SYSTEM">
+        <MappingFragment StoreEntitySet="UT_SYS_SYSTEM">
+          <ScalarProperty Name="SYSTEMID" ColumnName="SYSTEMID" />
+          <ScalarProperty Name="SYSTEMNAME" ColumnName="SYSTEMNAME" />
+          <ScalarProperty Name="SYSTEMTYPE" ColumnName="SYSTEMTYPE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DEFAULTTHEME" ColumnName="DEFAULTTHEME" />
+          <ScalarProperty Name="IMAGEURL" ColumnName="IMAGEURL" />
+          <ScalarProperty Name="SCREENINDEX" ColumnName="SCREENINDEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_USER">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_USER">
+        <MappingFragment StoreEntitySet="UT_SYS_USER">
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="USERGUID" ColumnName="USERGUID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="USERTYPE" ColumnName="USERTYPE" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="DEFAULTSYSTEMID" ColumnName="DEFAULTSYSTEMID" />
+          <ScalarProperty Name="DEFAULTLOAD" ColumnName="DEFAULTLOAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_SYS_USERROLE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_SYS_USERROLE">
+        <MappingFragment StoreEntitySet="UT_SYS_USERROLE">
+          <ScalarProperty Name="USERROLEID" ColumnName="USERROLEID" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="ROLEID" ColumnName="ROLEID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_Test">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_Test">
+        <MappingFragment StoreEntitySet="UT_Test">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_TRADE_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_TRADE_CODE">
+        <MappingFragment StoreEntitySet="UT_TRADE_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_TRADE_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_TRADE_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_TRADE_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_TRADE_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_TRADE_RULE">
+        <MappingFragment StoreEntitySet="UT_TRADE_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCTRADETR" ColumnName="MATCTRADETR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_TRANSPORT_CODE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_TRANSPORT_CODE">
+        <MappingFragment StoreEntitySet="UT_TRANSPORT_CODE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_TRANSPORT_DIRECTORY">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_TRANSPORT_DIRECTORY">
+        <MappingFragment StoreEntitySet="UT_TRANSPORT_DIRECTORY">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_CODE" ColumnName="IS_CODE" />
+          <ScalarProperty Name="DIRECTORYTYPE" ColumnName="DIRECTORYTYPE" />
+          <ScalarProperty Name="IS_HIDE" ColumnName="IS_HIDE" />
+          <ScalarProperty Name="ISALLOWREPEATEDCODE" ColumnName="ISALLOWREPEATEDCODE" />
+          <ScalarProperty Name="ISDEFAULTCODE" ColumnName="ISDEFAULTCODE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="PARENTOID" ColumnName="PARENTOID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_TRANSPORT_RULE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_TRANSPORT_RULE">
+        <MappingFragment StoreEntitySet="UT_TRANSPORT_RULE">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="MATCTRANSPORTTR" ColumnName="MATCTRANSPORTTR" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="ISDELETE" ColumnName="ISDELETE" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="ADDER" ColumnName="ADDER" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATER" ColumnName="UPDATER" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DatabaseExtension">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.DatabaseExtension">
+        <MappingFragment StoreEntitySet="DatabaseExtension">
+          <ScalarProperty Name="DatabaseID" ColumnName="DatabaseID" />
+          <ScalarProperty Name="DatabaseSchema" ColumnName="DatabaseSchema" />
+          <ScalarProperty Name="DatabaseName" ColumnName="DatabaseName" />
+          <ScalarProperty Name="CommandPreFix" ColumnName="CommandPreFix" />
+          <ScalarProperty Name="NameSpace" ColumnName="NameSpace" />
+          <ScalarProperty Name="ProjectDirectory" ColumnName="ProjectDirectory" />
+          <ScalarProperty Name="TfsCheck" ColumnName="TfsCheck" />
+          <ScalarProperty Name="TfsServer" ColumnName="TfsServer" />
+          <ScalarProperty Name="TfsUserName" ColumnName="TfsUserName" />
+          <ScalarProperty Name="TfsPassword" ColumnName="TfsPassword" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="CopyRight" ColumnName="CopyRight" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="GuidEntity" ColumnName="GuidEntity" />
+          <ScalarProperty Name="GuidDal" ColumnName="GuidDal" />
+          <ScalarProperty Name="GuidIBiz" ColumnName="GuidIBiz" />
+          <ScalarProperty Name="GuidBiz" ColumnName="GuidBiz" />
+          <ScalarProperty Name="GuidService" ColumnName="GuidService" />
+          <ScalarProperty Name="WCF" ColumnName="WCF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableDetailExtension">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.TableDetailExtension">
+        <MappingFragment StoreEntitySet="TableDetailExtension">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ColumnName" ColumnName="ColumnName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="IsSearch" ColumnName="IsSearch" />
+          <ScalarProperty Name="IsRange" ColumnName="IsRange" />
+          <ScalarProperty Name="PropertyType" ColumnName="PropertyType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TableExtension">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.TableExtension">
+        <MappingFragment StoreEntitySet="TableExtension">
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="Search" ColumnName="Search" />
+          <ScalarProperty Name="Create" ColumnName="Create" />
+          <ScalarProperty Name="Paging" ColumnName="Paging" />
+          <ScalarProperty Name="Delete" ColumnName="Delete" />
+          <ScalarProperty Name="Export" ColumnName="Export" />
+          <ScalarProperty Name="Print" ColumnName="Print" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UT_CODE_TEMP">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UT_CODE_TEMP">
+        <MappingFragment StoreEntitySet="UT_CODE_TEMP">
+          <ScalarProperty Name="OID" ColumnName="OID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="GROUPCODE" ColumnName="GROUPCODE" />
+          <ScalarProperty Name="GROUPNAME" ColumnName="GROUPNAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UV_AUTO_INFO">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UV_AUTO_INFO">
+        <MappingFragment StoreEntitySet="UV_AUTO_INFO">
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+          <ScalarProperty Name="OBJECT_NAME" ColumnName="OBJECT_NAME" />
+          <ScalarProperty Name="PROCDESCRIPTION" ColumnName="PROCDESCRIPTION" />
+          <ScalarProperty Name="INFOOID" ColumnName="INFOOID" />
+          <ScalarProperty Name="ISDISABLE" ColumnName="ISDISABLE" />
+          <ScalarProperty Name="MODELNAME" ColumnName="MODELNAME" />
+          <ScalarProperty Name="MODELURL" ColumnName="MODELURL" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UV_AUTO_PARAMS_INFO">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UV_AUTO_PARAMS_INFO">
+        <MappingFragment StoreEntitySet="UV_AUTO_PARAMS_INFO">
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+          <ScalarProperty Name="object_name" ColumnName="object_name" />
+          <ScalarProperty Name="argument_name" ColumnName="argument_name" />
+          <ScalarProperty Name="data_type" ColumnName="data_type" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="argument_value" ColumnName="argument_value" />
+          <ScalarProperty Name="in_out" ColumnName="in_out" />
+          <ScalarProperty Name="PARAMDESCRIPTION" ColumnName="PARAMDESCRIPTION" />
+          <ScalarProperty Name="INFOOID" ColumnName="INFOOID" />
+          <ScalarProperty Name="PARAMOID" ColumnName="PARAMOID" />
+          <ScalarProperty Name="BOOKMARKSNAMES" ColumnName="BOOKMARKSNAMES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UV_SEARCH_GETCHOOSEROOT">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UV_SEARCH_GETCHOOSEROOT">
+        <MappingFragment StoreEntitySet="UV_SEARCH_GETCHOOSEROOT">
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="SHOWNAME" ColumnName="SHOWNAME" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="DirName" ColumnName="DirName" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="OID" ColumnName="OID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UV_SEARCH_GETCHOOSEROOT_TREND">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UV_SEARCH_GETCHOOSEROOT_TREND">
+        <MappingFragment StoreEntitySet="UV_SEARCH_GETCHOOSEROOT_TREND">
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+          <ScalarProperty Name="SUITEOID" ColumnName="SUITEOID" />
+          <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+          <ScalarProperty Name="CODETYPE" ColumnName="CODETYPE" />
+          <ScalarProperty Name="DirName" ColumnName="DirName" />
+          <ScalarProperty Name="SortIndex" ColumnName="SortIndex" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UV_SYS_USER">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.UV_SYS_USER">
+        <MappingFragment StoreEntitySet="UV_SYS_USER">
+          <ScalarProperty Name="KEYID" ColumnName="KEYID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="USERTYPE" ColumnName="USERTYPE" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="ORGID" ColumnName="ORGID" />
+          <ScalarProperty Name="ORGNAME" ColumnName="ORGNAME" />
+          <ScalarProperty Name="ORGGUID" ColumnName="ORGGUID" />
+          <ScalarProperty Name="MOBILEPHONE" ColumnName="MOBILEPHONE" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="ROLENAME" ColumnName="ROLENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_SYS_EMPLOYEE">
+      <EntityTypeMapping TypeName="SDSWT_CustomsModel.V_SYS_EMPLOYEE">
+        <MappingFragment StoreEntitySet="V_SYS_EMPLOYEE">
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ORGID" ColumnName="ORGID" />
+          <ScalarProperty Name="USERGUID" ColumnName="USERGUID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="MOBILEPHONE" ColumnName="MOBILEPHONE" />
+          <ScalarProperty Name="OFFICEPHONE" ColumnName="OFFICEPHONE" />
+          <ScalarProperty Name="HOMEPHONE" ColumnName="HOMEPHONE" />
+          <ScalarProperty Name="DUTYID" ColumnName="DUTYID" />
+          <ScalarProperty Name="SORTINDEX" ColumnName="SORTINDEX" />
+          <ScalarProperty Name="ELECTRONICSIGNATURE" ColumnName="ELECTRONICSIGNATURE" />
+          <ScalarProperty Name="ADDDATE" ColumnName="ADDDATE" />
+          <ScalarProperty Name="UPDATEDATE" ColumnName="UPDATEDATE" />
+          <ScalarProperty Name="ISDELETED" ColumnName="ISDELETED" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="ISDEPARTURE" ColumnName="ISDEPARTURE" />
+          <ScalarProperty Name="DEPARTURETYPE" ColumnName="DEPARTURETYPE" />
+          <ScalarProperty Name="DEPARTUREDATE" ColumnName="DEPARTUREDATE" />
+          <ScalarProperty Name="DEPARTUREREASON" ColumnName="DEPARTUREREASON" />
+          <ScalarProperty Name="DEPARTUREREMARK" ColumnName="DEPARTUREREMARK" />
+          <ScalarProperty Name="ENTRYDATE" ColumnName="ENTRYDATE" />
+          <ScalarProperty Name="ANNUALLEAVE" ColumnName="ANNUALLEAVE" />
+          <ScalarProperty Name="OFFDAYS" ColumnName="OFFDAYS" />
+          <ScalarProperty Name="USERID" ColumnName="USERID" />
+          <ScalarProperty Name="EMERGENCYCONTACT" ColumnName="EMERGENCYCONTACT" />
+          <ScalarProperty Name="FIRSTNAME" ColumnName="FIRSTNAME" />
+          <ScalarProperty Name="IMAGE" ColumnName="IMAGE" />
+          <ScalarProperty Name="ORGNAME" ColumnName="ORGNAME" />
+          <ScalarProperty Name="ORGGUID" ColumnName="ORGGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

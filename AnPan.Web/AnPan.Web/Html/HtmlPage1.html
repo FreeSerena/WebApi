@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        @font-face {
+            font-family: myFont;
+            src: url( /fonts/SIMLI.TTF);
+            font-weight: bold;
+            font-size: 20px;
+            font-stretch: expanded;
+        }
+
+        #div1:before {
+            content: 'BLOCK';
+            display: block;
+            height: 100px;
+            width: 100px;
+        }
+
+        p.box {
+            width: 150px;
+            border: solid 1px black;
+            padding: 20px;
+            color: red;
+            font-size: 20px;
+            font-family: myFont;
+            transform: rotate(30deg);
+            -ms-transform: rotate(30deg); /*IE 9*/
+            -webkit-transform: rotate(30deg); /*Safari and Chrome;*/
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+            transition: width 2s, height 2s, transform 2s;
+        }
+        p.box:hover {
+            -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+            transform: rotate(180deg);
+        }
+
+            p.box:before {
+                content: '#';
+                border: solid 1px black;
+                padding: 2px;
+                margin: 0 20px 0 0;
+            }
+    </style>
+</head>
+<body>
+    <div id="div1">Other Content</div>
+    <p class="box">审核通过</p>
+</body>
+</html>

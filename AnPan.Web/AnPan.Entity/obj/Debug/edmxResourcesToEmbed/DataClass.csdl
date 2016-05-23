@@ -1,0 +1,2126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SDSWT_CustomsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UT_AUTO_INFO">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SORTINDEX" Type="Int32" />
+    <Property Name="PROCNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PROCDESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODELNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MODELURL" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_AUTO_PARAMS_INFO">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="PARAMNAME" Type="String" MaxLength="38" FixedLength="false" Unicode="true" />
+    <Property Name="PARAMDESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="INFOOID" Type="String" MaxLength="38" FixedLength="false" Unicode="true" />
+    <Property Name="BOOKMARKSNAMES" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_AUTO_REPORT_BAK">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="GROUPCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YEARMONTH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CURRENCY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="REPORTSNAME" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FILEURL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ADDER" Type="Guid" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UT_COMPANY_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="GROUPCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GROUPNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CITYCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CITYNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AREACODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AREANAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="Remark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_COMPANY_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_COMPANY_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MATCHSTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_CONSIGN_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_CONSIGN_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_CONSIGN_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MATCHSTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_COUNTRY_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_COUNTRY_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_COUNTRY_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MATCHSTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_CUST_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_CUST_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_CUST_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MATCHSTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_DATA_CONTRAST">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="UT_DATA_CONTRASTPART">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMQUNTCIRCLE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBUPCIRCLE" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPCIRCLEPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBCONTRASTTALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBCIRCLETALPERCENT" Type="Decimal" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="UT_DATA_FIXED">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="USD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="USDSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDCONTRASTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDSUMPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="RMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="RMBSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBCONTRASTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBSUMPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="QUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="QUNTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTCONTRASTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTSUMPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="DATATYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ROWINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TOPPERCENT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TOPSUMPERCENT" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="UT_DATA_MULTI">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="QUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="QUNTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTCONTRASTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="QUNTSUMPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="USD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="USDSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDCONTRASTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USDSUMPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="RMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="RMBSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBCONTRASTSUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RMBSUMPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="COMPANY1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANY12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COMPANYCODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HS12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="HSCODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUST12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTCODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRY12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRYCODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGN12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGNCODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADE12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRADECODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT6" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT7" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT8" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT9" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT10" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT11" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORT12" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORTCODE" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ROWINDEX" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_DATA_PRICE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTIPMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIQMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIPQMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTSUMQ" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBSUMM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMMSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBSUMMSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTIPTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIQTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIPQTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTPRICEPERCENTMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTPSMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTLSMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTFSMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTPRICEPERCENTTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTPSTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTLSTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTFSTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTIPMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIQMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIPQMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTSUMQ" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBSUMM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMMSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBSUMMSTANDARD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTIPTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIQTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIPQTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTPRICEPERCENTMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTPSMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTLSMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTFSMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTPRICEPERCENTTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTPSTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTLSTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTFSTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PROCESSUNIT" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTIPRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIQRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIPQRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIPRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIQRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTIPQRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTRMBPRICEPERCENTMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTPSRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTLSRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTFSRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTRMBPRICEPERCENTTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTPSRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTLSRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="IMPORTFSRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIPRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIQRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIPQRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIPRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIQRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTIPQRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTRMBPRICEPERCENTMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTPSRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTLSRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTFSRMBMONTH" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTRMBPRICEPERCENTTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTPSRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTLSRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+    <Property Name="EXPORTFSRMBTOTAL" Type="Decimal" Precision="24" Scale="4" />
+  </EntityType>
+  <EntityType Name="UT_DATA_TREND">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="YEARMONTH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IMPORTSUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IMPORTSUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IMPORTSUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EXPORTSUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="EXPORTSUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EXPORTSUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IERMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IEQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IEUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IEUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IERMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IERMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSD" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMUSDPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMB" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMRMBPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBCONRATE" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBPULLINGPOINT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMQUNT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTCONTRAST" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IESUMQUNTPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMUSDUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMUSDUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+    <Property Name="IESUMRMBUP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPCONTRAST" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="IESUMRMBUPPERCENT" Type="Decimal" Precision="24" Scale="2" />
+  </EntityType>
+  <EntityType Name="UT_DIRECTORY_SHAREDPOWER">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="USERID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODETYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="ISOPERATE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UT_HS_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_HS_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_HS_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MATCHSTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_IMPORT_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="IMPORTDATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="IMPORTTYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTTABLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_IMPORT_FORMAT">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="FORMATNAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEFAULT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_IMPORT_FORMATDT">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="FOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CODESTART" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CODELENGTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_IMPORTCODE_VIEW">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_IMPORTDATA_LOG">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="IMPORTTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DATADATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DATADATE2" Type="Int32" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IMPORTDATE" Type="DateTime" Precision="3" />
+    <Property Name="OPERATETYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="RECORDNUM" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="LOGTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_IMPORTDATA_RIGHT">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="IMPORTDATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ROLEGUID" Type="Guid" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_IMPORTDATA_VIEW_E">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="COMPANYCODE" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="HSCODE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGNCODE" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="TRADECODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRYCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTCODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORTCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="QUNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SUMQ" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="USD" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SUMM" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RMB" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RMBSUMM" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UNITCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_IMPORTDATA_VIEW_I">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="COMPANYCODE" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="HSCODE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="CONSIGNCODE" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="TRADECODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="COUNTRYCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="CUSTCODE" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSPORTCODE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="QUNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SUMQ" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="USD" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SUMM" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RMB" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RMBSUMM" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UNITCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_CONTRAST_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SEARCHYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SEARCHMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRASTYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRASTMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CIRCLEYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CIRCLEMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="ISCONTRAST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISCIRCLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_CONTRAST_NODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LEVELS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDIRECTORY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PERCENTAGE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DIRECTORYID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_CONTRASTPART_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SEARCHYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SEARCHMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRASTYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRASTMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CIRCLEYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CIRCLEMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="ISCONTRAST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISCIRCLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_CONTRASTPART_NODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LEVELS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDIRECTORY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PERCENTAGE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NODETYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYCATEGORY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="PARENTOID" Type="Guid" />
+    <Property Name="DIRECTORYOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_EXPDIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NODETYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYCATEGORY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CODE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_FIXED_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SELECTYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SELECTMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_FIXED_NODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LEVELS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDIRECTORY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_MULTIDIM_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SELECTYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SELECTMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_MULTIDIM_NODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LEVELS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDIRECTORY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ORDERINDEX" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_PRICE_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SELECTYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="REPORTDATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="STANDARDDATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DATATYPE" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="CALCTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_PRICE_NODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="DIRECTORYID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LEVELS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDIRECTORY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_SUITE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SEARCHTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USERID" Type="Guid" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_SUITE_SELECTED_DATA">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_TREND_DATE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SEARCHDATE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ISCONTRAST" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DATATYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UT_SEARCH_TREND_DATEDT" Relationship="Self.FK_UT_SEARCH_TREND_DATEDT_UT_SEARCH_TREND_DATE" FromRole="UT_SEARCH_TREND_DATE" ToRole="UT_SEARCH_TREND_DATEDT" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_TREND_DATEDT">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="TRENDOID" Type="Guid" />
+    <Property Name="CONTRASTYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="CONTRASTMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="SEARCHYEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SEARCHMONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UT_SEARCH_TREND_DATE" Relationship="Self.FK_UT_SEARCH_TREND_DATEDT_UT_SEARCH_TREND_DATE" FromRole="UT_SEARCH_TREND_DATEDT" ToRole="UT_SEARCH_TREND_DATE" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_TREND_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SUITEOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_SEARCH_TREND_NODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="DIRECTORYID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ISDIRECTORY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="LEVELS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SYS_CODE">
+    <Key>
+      <PropertyRef Name="CODEID" />
+    </Key>
+    <Property Name="CODEID" Type="Guid" Nullable="false" />
+    <Property Name="CODEGROUPID" Type="Guid" />
+    <Property Name="CODENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CODEVALUE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MEMO" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="SORTORDER" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_SYS_CODEGROUP">
+    <Key>
+      <PropertyRef Name="CODEGROUPID" />
+    </Key>
+    <Property Name="CODEGROUPID" Type="Guid" Nullable="false" />
+    <Property Name="CODEGROUPKEY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CODEGROUPNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTORDER" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="MEMO" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_SYS_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ORGID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USERGUID" Type="Guid" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="BIRTHDAY" Type="DateTime" Precision="3" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MOBILEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OFFICEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HOMEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUTYID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEPARTURE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DEPARTURETYPE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DEPARTUREDATE" Type="DateTime" Precision="3" />
+    <Property Name="DEPARTUREREASON" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DEPARTUREREMARK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ENTRYDATE" Type="DateTime" Precision="3" />
+    <Property Name="ANNUALLEAVE" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="OFFDAYS" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="USERID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EMERGENCYCONTACT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ELECTRONICSIGNATURE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IMAGE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UT_SYS_LOG">
+    <Key>
+      <PropertyRef Name="LOGID" />
+    </Key>
+    <Property Name="LOGID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LOGTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USERCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MACHINEIP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OPERATEMODULE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OPERATETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OPERATEDESC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SYS_LOG4NET">
+    <Key>
+      <PropertyRef Name="LOGID" />
+    </Key>
+    <Property Name="LOGID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LOGTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="THREAD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LOGLEVEL" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LOGGER" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LOGGUID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USERCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MACHINEIP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MACHINENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOURCETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOURCE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="EXCEPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UT_SYS_ORGANIZATION">
+    <Key>
+      <PropertyRef Name="ORGID" />
+    </Key>
+    <Property Name="ORGID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ORGGUID" Type="Guid" />
+    <Property Name="ORGNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGTYPE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ORGNUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGPARENTID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ORGEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ORGLEGAL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGFAX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEPERSON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGLINKMAN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LINKPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LINKMOBILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LINKEMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="REMARK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ORGLEVEL" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_SYS_PERSONALDESKTOP">
+    <Key>
+      <PropertyRef Name="PERSONALDESKTOPID" />
+    </Key>
+    <Property Name="PERSONALDESKTOPID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SYSTEMRIGHTID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="USERID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SYSTEMID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SORTORDER" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DISPLAYTYPE" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_SYS_RIGHT">
+    <Key>
+      <PropertyRef Name="RIGHTID" />
+    </Key>
+    <Property Name="RIGHTID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SYSTEMID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="PARENTRIGHTID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="RIGHTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TYPE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ISADMINRGIHT" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="NAVIGATEURL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NAVIGATEURL2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGEURL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SIMAGEURL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SORTORDER" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ISDISPLAY" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TARGET" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RIGHTLEVEL" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="WIDTH" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="HEIGHT" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_SYS_ROLE">
+    <Key>
+      <PropertyRef Name="ROLEID" />
+    </Key>
+    <Property Name="ROLEID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ROLEGUID" Type="Guid" />
+    <Property Name="SYSTEMID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ROLENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ROLETYPE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISADMIN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UT_SYS_ROLERIGHT">
+    <Key>
+      <PropertyRef Name="RoleRightID" />
+    </Key>
+    <Property Name="RoleRightID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SystemRightID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UT_SYS_SYSTEM">
+    <Key>
+      <PropertyRef Name="SYSTEMID" />
+    </Key>
+    <Property Name="SYSTEMID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SYSTEMNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SYSTEMTYPE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DEFAULTTHEME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGEURL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SCREENINDEX" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_SYS_USER">
+    <Key>
+      <PropertyRef Name="USERID" />
+    </Key>
+    <Property Name="USERID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERGUID" Type="Guid" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCOUNT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USERTYPE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="ISDELETED" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DEFAULTSYSTEMID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DEFAULTLOAD" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UT_SYS_USERROLE">
+    <Key>
+      <PropertyRef Name="USERROLEID" />
+    </Key>
+    <Property Name="USERROLEID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ROLEID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UT_Test">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UT_TRADE_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_TRADE_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_TRADE_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MATCTRADETR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_TRANSPORT_CODE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UT_TRANSPORT_DIRECTORY">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IS_CODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECTORYTYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="IS_HIDE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISALLOWREPEATEDCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDEFAULTCODE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="PARENTOID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="UT_TRANSPORT_RULE">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="MATCTRANSPORTTR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ISDELETE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ADDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DatabaseExtension">
+    <Key>
+      <PropertyRef Name="DatabaseID" />
+    </Key>
+    <Property Name="DatabaseID" Type="Int32" Nullable="false" />
+    <Property Name="DatabaseSchema" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DatabaseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CommandPreFix" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NameSpace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectDirectory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TfsCheck" Type="Boolean" />
+    <Property Name="TfsServer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TfsUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TfsPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CopyRight" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Product" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GuidEntity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GuidDal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GuidIBiz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GuidBiz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GuidService" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WCF" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TableDetailExtension">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="ColumnName" />
+    </Key>
+    <Property Name="TableName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ColumnName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsShow" Type="Boolean" />
+    <Property Name="IsSearch" Type="Boolean" />
+    <Property Name="IsRange" Type="Boolean" />
+    <Property Name="PropertyType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TableExtension">
+    <Key>
+      <PropertyRef Name="TableName" />
+    </Key>
+    <Property Name="TableName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ControllerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Search" Type="Boolean" />
+    <Property Name="Create" Type="Boolean" />
+    <Property Name="Paging" Type="Boolean" />
+    <Property Name="Delete" Type="Boolean" />
+    <Property Name="Export" Type="Boolean" />
+    <Property Name="Print" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UT_CODE_TEMP">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OID" Type="Guid" Nullable="false" />
+    <Property Name="CODE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="UNIT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="GROUPCODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GROUPNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UV_AUTO_INFO">
+    <Key>
+      <PropertyRef Name="OBJECT_NAME" />
+      <PropertyRef Name="ISDISABLE" />
+    </Key>
+    <Property Name="KeyID" Type="Guid" />
+    <Property Name="OBJECT_NAME" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROCDESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="INFOOID" Type="Guid" />
+    <Property Name="ISDISABLE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MODELNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MODELURL" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UV_AUTO_PARAMS_INFO">
+    <Key>
+      <PropertyRef Name="object_name" />
+      <PropertyRef Name="argument_value" />
+      <PropertyRef Name="in_out" />
+    </Key>
+    <Property Name="KeyID" Type="Guid" />
+    <Property Name="object_name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="argument_name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="data_type" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="position" Type="Int16" />
+    <Property Name="argument_value" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="in_out" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARAMDESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="INFOOID" Type="Guid" />
+    <Property Name="PARAMOID" Type="Guid" />
+    <Property Name="BOOKMARKSNAMES" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UV_SEARCH_GETCHOOSEROOT">
+    <Key>
+      <PropertyRef Name="SortIndex" />
+      <PropertyRef Name="CategoryName" />
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="KeyID" Type="Guid" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="SHOWNAME" Type="String" MaxLength="322" FixedLength="false" Unicode="true" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SortIndex" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="OID" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UV_SEARCH_GETCHOOSEROOT_TREND">
+    <Key>
+      <PropertyRef Name="SortIndex" />
+      <PropertyRef Name="CategoryName" />
+    </Key>
+    <Property Name="KeyID" Type="Guid" />
+    <Property Name="SUITEOID" Type="Guid" />
+    <Property Name="ShowName" Type="String" MaxLength="322" FixedLength="false" Unicode="true" />
+    <Property Name="CODETYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SortIndex" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORDERID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UV_SYS_USER">
+    <Key>
+      <PropertyRef Name="KEYID" />
+      <PropertyRef Name="USERNAME" />
+      <PropertyRef Name="ACCOUNT" />
+    </Key>
+    <Property Name="KEYID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCOUNT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="USERTYPE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="SEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ORGID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ORGNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGGUID" Type="Guid" />
+    <Property Name="MOBILEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ROLENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="V_SYS_EMPLOYEE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="KeyID" Type="Guid" />
+    <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ORGID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="USERGUID" Type="String" MaxLength="38" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="BIRTHDAY" Type="DateTime" Precision="3" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MOBILEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OFFICEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HOMEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUTYID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SORTINDEX" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ELECTRONICSIGNATURE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ADDDATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="ISDELETED" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="ADDRESS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ISDEPARTURE" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="DEPARTURETYPE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DEPARTUREDATE" Type="DateTime" Precision="3" />
+    <Property Name="DEPARTUREREASON" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DEPARTUREREMARK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ENTRYDATE" Type="DateTime" Precision="3" />
+    <Property Name="ANNUALLEAVE" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="OFFDAYS" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="USERID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="EMERGENCYCONTACT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IMAGE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ORGNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ORGGUID" Type="String" MaxLength="38" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_UT_SEARCH_TREND_DATEDT_UT_SEARCH_TREND_DATE">
+    <End Role="UT_SEARCH_TREND_DATE" Type="Self.UT_SEARCH_TREND_DATE" Multiplicity="0..1" />
+    <End Role="UT_SEARCH_TREND_DATEDT" Type="Self.UT_SEARCH_TREND_DATEDT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UT_SEARCH_TREND_DATE">
+        <PropertyRef Name="OID" />
+      </Principal>
+      <Dependent Role="UT_SEARCH_TREND_DATEDT">
+        <PropertyRef Name="TRENDOID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CustomsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="UT_AUTO_INFO" EntityType="Self.UT_AUTO_INFO" />
+    <EntitySet Name="UT_AUTO_PARAMS_INFO" EntityType="Self.UT_AUTO_PARAMS_INFO" />
+    <EntitySet Name="UT_AUTO_REPORT_BAK" EntityType="Self.UT_AUTO_REPORT_BAK" />
+    <EntitySet Name="UT_COMPANY_CODE" EntityType="Self.UT_COMPANY_CODE" />
+    <EntitySet Name="UT_COMPANY_DIRECTORY" EntityType="Self.UT_COMPANY_DIRECTORY" />
+    <EntitySet Name="UT_COMPANY_RULE" EntityType="Self.UT_COMPANY_RULE" />
+    <EntitySet Name="UT_CONSIGN_CODE" EntityType="Self.UT_CONSIGN_CODE" />
+    <EntitySet Name="UT_CONSIGN_DIRECTORY" EntityType="Self.UT_CONSIGN_DIRECTORY" />
+    <EntitySet Name="UT_CONSIGN_RULE" EntityType="Self.UT_CONSIGN_RULE" />
+    <EntitySet Name="UT_COUNTRY_CODE" EntityType="Self.UT_COUNTRY_CODE" />
+    <EntitySet Name="UT_COUNTRY_DIRECTORY" EntityType="Self.UT_COUNTRY_DIRECTORY" />
+    <EntitySet Name="UT_COUNTRY_RULE" EntityType="Self.UT_COUNTRY_RULE" />
+    <EntitySet Name="UT_CUST_CODE" EntityType="Self.UT_CUST_CODE" />
+    <EntitySet Name="UT_CUST_DIRECTORY" EntityType="Self.UT_CUST_DIRECTORY" />
+    <EntitySet Name="UT_CUST_RULE" EntityType="Self.UT_CUST_RULE" />
+    <EntitySet Name="UT_DATA_CONTRAST" EntityType="Self.UT_DATA_CONTRAST" />
+    <EntitySet Name="UT_DATA_CONTRASTPART" EntityType="Self.UT_DATA_CONTRASTPART" />
+    <EntitySet Name="UT_DATA_FIXED" EntityType="Self.UT_DATA_FIXED" />
+    <EntitySet Name="UT_DATA_MULTI" EntityType="Self.UT_DATA_MULTI" />
+    <EntitySet Name="UT_DATA_PRICE" EntityType="Self.UT_DATA_PRICE" />
+    <EntitySet Name="UT_DATA_TREND" EntityType="Self.UT_DATA_TREND" />
+    <EntitySet Name="UT_DIRECTORY_SHAREDPOWER" EntityType="Self.UT_DIRECTORY_SHAREDPOWER" />
+    <EntitySet Name="UT_HS_CODE" EntityType="Self.UT_HS_CODE" />
+    <EntitySet Name="UT_HS_DIRECTORY" EntityType="Self.UT_HS_DIRECTORY" />
+    <EntitySet Name="UT_HS_RULE" EntityType="Self.UT_HS_RULE" />
+    <EntitySet Name="UT_IMPORT_DATE" EntityType="Self.UT_IMPORT_DATE" />
+    <EntitySet Name="UT_IMPORT_FORMAT" EntityType="Self.UT_IMPORT_FORMAT" />
+    <EntitySet Name="UT_IMPORT_FORMATDT" EntityType="Self.UT_IMPORT_FORMATDT" />
+    <EntitySet Name="UT_IMPORTCODE_VIEW" EntityType="Self.UT_IMPORTCODE_VIEW" />
+    <EntitySet Name="UT_IMPORTDATA_LOG" EntityType="Self.UT_IMPORTDATA_LOG" />
+    <EntitySet Name="UT_IMPORTDATA_RIGHT" EntityType="Self.UT_IMPORTDATA_RIGHT" />
+    <EntitySet Name="UT_IMPORTDATA_VIEW_E" EntityType="Self.UT_IMPORTDATA_VIEW_E" />
+    <EntitySet Name="UT_IMPORTDATA_VIEW_I" EntityType="Self.UT_IMPORTDATA_VIEW_I" />
+    <EntitySet Name="UT_SEARCH_CONTRAST_DATE" EntityType="Self.UT_SEARCH_CONTRAST_DATE" />
+    <EntitySet Name="UT_SEARCH_CONTRAST_NODE" EntityType="Self.UT_SEARCH_CONTRAST_NODE" />
+    <EntitySet Name="UT_SEARCH_CONTRASTPART_DATE" EntityType="Self.UT_SEARCH_CONTRASTPART_DATE" />
+    <EntitySet Name="UT_SEARCH_CONTRASTPART_NODE" EntityType="Self.UT_SEARCH_CONTRASTPART_NODE" />
+    <EntitySet Name="UT_SEARCH_DIRECTORY" EntityType="Self.UT_SEARCH_DIRECTORY" />
+    <EntitySet Name="UT_SEARCH_EXPDIRECTORY" EntityType="Self.UT_SEARCH_EXPDIRECTORY" />
+    <EntitySet Name="UT_SEARCH_FIXED_DATE" EntityType="Self.UT_SEARCH_FIXED_DATE" />
+    <EntitySet Name="UT_SEARCH_FIXED_NODE" EntityType="Self.UT_SEARCH_FIXED_NODE" />
+    <EntitySet Name="UT_SEARCH_MULTIDIM_DATE" EntityType="Self.UT_SEARCH_MULTIDIM_DATE" />
+    <EntitySet Name="UT_SEARCH_MULTIDIM_NODE" EntityType="Self.UT_SEARCH_MULTIDIM_NODE" />
+    <EntitySet Name="UT_SEARCH_PRICE_DATE" EntityType="Self.UT_SEARCH_PRICE_DATE" />
+    <EntitySet Name="UT_SEARCH_PRICE_NODE" EntityType="Self.UT_SEARCH_PRICE_NODE" />
+    <EntitySet Name="UT_SEARCH_SUITE" EntityType="Self.UT_SEARCH_SUITE" />
+    <EntitySet Name="UT_SEARCH_SUITE_SELECTED_DATA" EntityType="Self.UT_SEARCH_SUITE_SELECTED_DATA" />
+    <EntitySet Name="UT_SEARCH_TREND_DATE" EntityType="Self.UT_SEARCH_TREND_DATE" />
+    <EntitySet Name="UT_SEARCH_TREND_DATEDT" EntityType="Self.UT_SEARCH_TREND_DATEDT" />
+    <EntitySet Name="UT_SEARCH_TREND_DIRECTORY" EntityType="Self.UT_SEARCH_TREND_DIRECTORY" />
+    <EntitySet Name="UT_SEARCH_TREND_NODE" EntityType="Self.UT_SEARCH_TREND_NODE" />
+    <EntitySet Name="UT_SYS_CODE" EntityType="Self.UT_SYS_CODE" />
+    <EntitySet Name="UT_SYS_CODEGROUP" EntityType="Self.UT_SYS_CODEGROUP" />
+    <EntitySet Name="UT_SYS_EMPLOYEE" EntityType="Self.UT_SYS_EMPLOYEE" />
+    <EntitySet Name="UT_SYS_LOG" EntityType="Self.UT_SYS_LOG" />
+    <EntitySet Name="UT_SYS_LOG4NET" EntityType="Self.UT_SYS_LOG4NET" />
+    <EntitySet Name="UT_SYS_ORGANIZATION" EntityType="Self.UT_SYS_ORGANIZATION" />
+    <EntitySet Name="UT_SYS_PERSONALDESKTOP" EntityType="Self.UT_SYS_PERSONALDESKTOP" />
+    <EntitySet Name="UT_SYS_RIGHT" EntityType="Self.UT_SYS_RIGHT" />
+    <EntitySet Name="UT_SYS_ROLE" EntityType="Self.UT_SYS_ROLE" />
+    <EntitySet Name="UT_SYS_ROLERIGHT" EntityType="Self.UT_SYS_ROLERIGHT" />
+    <EntitySet Name="UT_SYS_SYSTEM" EntityType="Self.UT_SYS_SYSTEM" />
+    <EntitySet Name="UT_SYS_USER" EntityType="Self.UT_SYS_USER" />
+    <EntitySet Name="UT_SYS_USERROLE" EntityType="Self.UT_SYS_USERROLE" />
+    <EntitySet Name="UT_Test" EntityType="Self.UT_Test" />
+    <EntitySet Name="UT_TRADE_CODE" EntityType="Self.UT_TRADE_CODE" />
+    <EntitySet Name="UT_TRADE_DIRECTORY" EntityType="Self.UT_TRADE_DIRECTORY" />
+    <EntitySet Name="UT_TRADE_RULE" EntityType="Self.UT_TRADE_RULE" />
+    <EntitySet Name="UT_TRANSPORT_CODE" EntityType="Self.UT_TRANSPORT_CODE" />
+    <EntitySet Name="UT_TRANSPORT_DIRECTORY" EntityType="Self.UT_TRANSPORT_DIRECTORY" />
+    <EntitySet Name="UT_TRANSPORT_RULE" EntityType="Self.UT_TRANSPORT_RULE" />
+    <EntitySet Name="DatabaseExtension" EntityType="Self.DatabaseExtension" />
+    <EntitySet Name="TableDetailExtension" EntityType="Self.TableDetailExtension" />
+    <EntitySet Name="TableExtension" EntityType="Self.TableExtension" />
+    <EntitySet Name="UT_CODE_TEMP" EntityType="Self.UT_CODE_TEMP" />
+    <EntitySet Name="UV_AUTO_INFO" EntityType="Self.UV_AUTO_INFO" />
+    <EntitySet Name="UV_AUTO_PARAMS_INFO" EntityType="Self.UV_AUTO_PARAMS_INFO" />
+    <EntitySet Name="UV_SEARCH_GETCHOOSEROOT" EntityType="Self.UV_SEARCH_GETCHOOSEROOT" />
+    <EntitySet Name="UV_SEARCH_GETCHOOSEROOT_TREND" EntityType="Self.UV_SEARCH_GETCHOOSEROOT_TREND" />
+    <EntitySet Name="UV_SYS_USER" EntityType="Self.UV_SYS_USER" />
+    <EntitySet Name="V_SYS_EMPLOYEE" EntityType="Self.V_SYS_EMPLOYEE" />
+    <AssociationSet Name="FK_UT_SEARCH_TREND_DATEDT_UT_SEARCH_TREND_DATE" Association="Self.FK_UT_SEARCH_TREND_DATEDT_UT_SEARCH_TREND_DATE">
+      <End Role="UT_SEARCH_TREND_DATE" EntitySet="UT_SEARCH_TREND_DATE" />
+      <End Role="UT_SEARCH_TREND_DATEDT" EntitySet="UT_SEARCH_TREND_DATEDT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

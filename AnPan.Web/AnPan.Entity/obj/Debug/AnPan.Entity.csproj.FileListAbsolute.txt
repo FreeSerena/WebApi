@@ -1,0 +1,8 @@
+D:\VSProject\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.csprojResolveAssemblyReference.cache
+D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\AnPan.Entity.dll.config
+D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\AnPan.Entity.dll
+D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\AnPan.Entity.pdb
+D:\VSProject\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.dll
+D:\VSProject\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.pdb
+D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\EntityFramework.dll
+D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\EntityFramework.xml

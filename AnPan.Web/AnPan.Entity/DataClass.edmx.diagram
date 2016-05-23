@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="240af2e3bc8b406d8820108c81f66ca3" Name="Diagram1">
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_AUTO_INFO" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_AUTO_PARAMS_INFO" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_AUTO_REPORT_BAK" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_COMPANY_CODE" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_COMPANY_DIRECTORY" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_COMPANY_RULE" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CONSIGN_CODE" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CONSIGN_DIRECTORY" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CONSIGN_RULE" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_COUNTRY_CODE" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_COUNTRY_DIRECTORY" Width="1.5" PointX="4.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_COUNTRY_RULE" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CUST_CODE" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CUST_DIRECTORY" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CUST_RULE" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DATA_CONTRAST" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DATA_CONTRASTPART" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DATA_FIXED" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DATA_MULTI" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DATA_PRICE" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DATA_TREND" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_DIRECTORY_SHAREDPOWER" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_HS_CODE" Width="1.5" PointX="18.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_HS_DIRECTORY" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_HS_RULE" Width="1.5" PointX="18.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORT_DATE" Width="1.5" PointX="8.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORT_FORMAT" Width="1.5" PointX="16.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORT_FORMATDT" Width="1.5" PointX="18.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORTCODE_VIEW" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORTDATA_LOG" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORTDATA_RIGHT" Width="1.5" PointX="20.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORTDATA_VIEW_E" Width="1.5" PointX="20.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_IMPORTDATA_VIEW_I" Width="1.5" PointX="20.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_CONTRAST_DATE" Width="1.5" PointX="20.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_CONTRAST_NODE" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_CONTRASTPART_DATE" Width="1.5" PointX="22.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_CONTRASTPART_NODE" Width="1.5" PointX="22.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_DIRECTORY" Width="1.5" PointX="22.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_EXPDIRECTORY" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_FIXED_DATE" Width="1.5" PointX="22.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_FIXED_NODE" Width="1.5" PointX="22.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_MULTIDIM_DATE" Width="1.5" PointX="8.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_MULTIDIM_NODE" Width="1.5" PointX="14.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_PRICE_DATE" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_PRICE_NODE" Width="1.5" PointX="24.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_SUITE" Width="1.5" PointX="24.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_SUITE_SELECTED_DATA" Width="1.5" PointX="24.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_TREND_DATE" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_TREND_DATEDT" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_TREND_DIRECTORY" Width="1.5" PointX="24.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SEARCH_TREND_NODE" Width="1.5" PointX="24.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_CODE" Width="1.5" PointX="16.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_CODEGROUP" Width="1.5" PointX="18.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_EMPLOYEE" Width="1.5" PointX="24.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_LOG" Width="1.5" PointX="20.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_LOG4NET" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_ORGANIZATION" Width="1.5" PointX="26.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_PERSONALDESKTOP" Width="1.5" PointX="8.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_RIGHT" Width="1.5" PointX="26.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_ROLE" Width="1.5" PointX="26.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_ROLERIGHT" Width="1.5" PointX="26.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_SYSTEM" Width="1.5" PointX="26.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_USER" Width="1.5" PointX="22.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_SYS_USERROLE" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_Test" Width="1.5" PointX="28.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_TRADE_CODE" Width="1.5" PointX="28.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_TRADE_DIRECTORY" Width="1.5" PointX="28.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_TRADE_RULE" Width="1.5" PointX="14.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_TRANSPORT_CODE" Width="1.5" PointX="28.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_TRANSPORT_DIRECTORY" Width="1.5" PointX="16.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_TRANSPORT_RULE" Width="1.5" PointX="28.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.DatabaseExtension" Width="1.5" PointX="28.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.TableDetailExtension" Width="1.5" PointX="24.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.TableExtension" Width="1.5" PointX="8.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UT_CODE_TEMP" Width="1.5" PointX="18.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UV_AUTO_INFO" Width="1.5" PointX="26.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UV_AUTO_PARAMS_INFO" Width="1.5" PointX="28.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UV_SEARCH_GETCHOOSEROOT" Width="1.5" PointX="30.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UV_SEARCH_GETCHOOSEROOT_TREND" Width="1.5" PointX="30.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.UV_SYS_USER" Width="1.5" PointX="30.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SDSWT_CustomsModel.V_SYS_EMPLOYEE" Width="1.5" PointX="30.75" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="SDSWT_CustomsModel.FK_UT_SEARCH_TREND_DATEDT_UT_SEARCH_TREND_DATE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
