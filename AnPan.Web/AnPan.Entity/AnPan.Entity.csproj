@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomModel\RightModel.cs" />
     <Compile Include="DatabaseExtension.cs">
       <DependentUpon>DataClass.tt</DependentUpon>
     </Compile>

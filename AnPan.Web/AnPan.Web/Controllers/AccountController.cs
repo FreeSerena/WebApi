@@ -8,6 +8,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using AnPan.Entity;
+using AnPan.Entity.CustomModel;
 
 namespace AnPan.Web.Controllers
 {
@@ -24,13 +25,11 @@ namespace AnPan.Web.Controllers
         [HttpPost]
         public ActionResult Login(ModelAccount model, FormCollection collection)
         {
+            string xx = ApiHelper.Get(ApiHelper.ApiUrl + "SysMenu/GetSysMenu?userID=1").Replace("\\","");
+            var re = JsonConvert.DeserializeObject<RightModel>(xx);
             string result = ApiHelper.Post(ApiHelper.ApiUrl + "Account/Login", JsonConvert.SerializeObject(model.User));
             if (String.IsNullOrEmpty(result))
             {
-                if (model.IsChecked)
-                {
- 
-                }
                 return Redirect("/Home/Index");
             }
             else
