@@ -1,91 +1,135 @@
-﻿* {
+﻿body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-ul {
-    list-style: none;
-    text-decoration:none;
+html, body {
+    height: 100%;
+}
+
+img {
+    border: none;
+}
+
+* {
+    font-family: '微软雅黑';
+    font-size: 12px;
+    color: #626262;
+}
+
+dl, dt, dd {
+    display: block;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-.nav {
-    height: 50px;
-    font-size: 14px;
-    background-color: #0081C2;
+#bg {
+    background-image: url(/images/content/dotted.png);
 }
 
-    .nav ul {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-        .nav ul li {
-            display: inline-block;
-            width: 15%;
-            height: 50px;
-            text-align: center;
-            text-decoration:none;
-            line-height: 45px;
-            position: relative;
-        }
-/*menu相对li定位 并默认隐藏*/
-.menu {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    background-color: #005580;
-    line-height: 33px;
-    display: none;
-}
-
-    .menu p {
-        width: 100%;
-        height: 35px;
-    }
-
-        .menu p a:hover {
-            color: #dfdfdf;
-        }
-
-.nav ul li a {
-    display: block;
+.container {
     width: 100%;
     height: 100%;
-    color: #ffffff;
-    text-align: center;
+    margin: auto;
+    overflow:hidden; padding:0;
 }
 
-　　
-/*当li鼠标hover时显示*/
-.nav ul li:hover {
-    background-color: #00007D;
+/*top*/
+.topsidebar-box{
+    height:20%;
 }
 
-.nav ul li:hover .menu {
-    display: block;
+/*left*/
+.leftsidebar_box {
+    width: 10%;
+    
+    height: auto !important;
+    overflow: visible !important;
+    position: fixed;
+    height: 80% !important;
+    background-color: #3992d0;
 }
 
-.menu {
-    position: absolute;
-    left: 0;
+/*right*/
+.rightsidebar-box {
+    float: right;
+    width: 90%;
+    padding-left:180px;
+    height:80% !important;
+    background: #F8F8FF;
+}
+
+.line {
+    height: 2px;
     width: 100%;
-    background-color: #005580;
-    line-height: 33px;
-    z-index: -1;
-    transition: all 500ms;
-    top: -200px;
-    opacity: 0;
+    background-image: url(/images/left/line_bg.png);
+    background-repeat: repeat-x;
 }
 
-.nav ul li:hover .menu {
-    top: 50px;
-    opacity: 1;
+.leftsidebar_box dt {
+    padding-left: 40px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #f5f5f5;
+    font-size: 14px;
+    position: relative;
+    line-height: 48px;
+    cursor: pointer;
 }
-/*hover时改变他它的top与透明度*/
 
+.leftsidebar_box dd {
+    background-color: #317eb4;
+    padding-left: 40px;
+}
 
+    .leftsidebar_box dd a {
+        color: #f5f5f5;
+        line-height: 20px;
+    }
+
+.leftsidebar_box dt img {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.system_log dt {
+    background-image: url(/images/left/system.png);
+}
+
+.custom dt {
+    background-image: url(/images/left/custom.png);
+}
+
+.channel dt {
+    background-image: url(/images/left/channel.png);
+}
+
+.app dt {
+    background-image: url(/images/left/app.png);
+}
+
+.cloud dt {
+    background-image: url(/images/left/cloud.png);
+}
+
+.syetem_management dt {
+    background-image: url(/images/left/syetem_management.png);
+}
+
+.source dt {
+    background-image: url(/images/left/source.png);
+}
+
+.statistics dt {
+    background-image: url(/images/left/statistics.png);
+}
+
+.leftsidebar_box dl dd:last-child {
+    padding-bottom: 10px;
+}

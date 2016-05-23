@@ -6,3 +6,11 @@ D:\VSProject\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.dll
 D:\VSProject\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.pdb
 D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\EntityFramework.dll
 D:\VSProject\AnPan.Web\AnPan.Entity\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\bin\Debug\AnPan.Entity.dll.config
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\bin\Debug\AnPan.Entity.dll
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\bin\Debug\AnPan.Entity.pdb
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.dll
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Entity\obj\Debug\AnPan.Entity.pdb
