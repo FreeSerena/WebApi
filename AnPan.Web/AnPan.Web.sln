@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnPan.WebApi", "AnPan.WebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnPan.Entity", "AnPan.Entity\AnPan.Entity.csproj", "{E535E885-49AF-46FA-B82B-26EF7A925B0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnPan.Base", "AnPan.Base\AnPan.Base.csproj", "{5EAD8743-4237-4F82-AB0A-0132312744F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E535E885-49AF-46FA-B82B-26EF7A925B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E535E885-49AF-46FA-B82B-26EF7A925B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E535E885-49AF-46FA-B82B-26EF7A925B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAD8743-4237-4F82-AB0A-0132312744F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAD8743-4237-4F82-AB0A-0132312744F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAD8743-4237-4F82-AB0A-0132312744F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAD8743-4237-4F82-AB0A-0132312744F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

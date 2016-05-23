@@ -191,6 +191,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ModelAccount.cs" />
+    <Compile Include="Models\ModelSysRight.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1291,6 +1292,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AnPan.Base\AnPan.Base.csproj">
+      <Project>{5ead8743-4237-4f82-ab0a-0132312744f9}</Project>
+      <Name>AnPan.Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AnPan.Entity\AnPan.Entity.csproj">
       <Project>{e535e885-49af-46fa-b82b-26ef7a925b0f}</Project>
       <Name>AnPan.Entity</Name>

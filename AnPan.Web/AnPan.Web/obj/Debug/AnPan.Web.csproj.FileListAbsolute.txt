@@ -178,3 +178,5 @@ C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Web\bin\zh-Hant\S
 C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Web\obj\Debug\AnPan.Web.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Web\obj\Debug\AnPan.Web.dll
 C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Web\obj\Debug\AnPan.Web.pdb
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Web\bin\AnPan.Base.dll
+C:\Users\Administrator\Documents\GitHub\WebApi\AnPan.Web\AnPan.Web\bin\AnPan.Base.pdb

@@ -26,7 +26,13 @@ namespace AnPan.Web.Controllers
         {
             string result = ApiHelper.Post(ApiHelper.ApiUrl + "Account/Login", JsonConvert.SerializeObject(model.User));
             if (String.IsNullOrEmpty(result))
+            {
+                if (model.IsChecked)
+                {
+ 
+                }
                 return Redirect("/Home/Index");
+            }
             else
                 return Content("");
         }
