@@ -11,6 +11,7 @@ namespace AnPan.Entity.CustomModel
     {
         public decimal ParentID { get; set; }
         public string Name { get; set; }
+        public string ImageUrl { get; set; }
         public List<SysRight> ChildList = new List<SysRight>();
     }
     [Serializable]

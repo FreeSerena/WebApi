@@ -23,7 +23,7 @@ namespace AnPan.WebApi.Controllers
                             on B.SystemRightID equals C.RIGHTID
                             join D in db.UT_SYS_RIGHT
                             on C.PARENTRIGHTID equals D.RIGHTID
-                            where A.USERID == userID && C.PARENTRIGHTID != 0 && C.TYPE != 2
+                            where A.USERID == userID && C.TYPE != 2
                             select new SysRight 
                             {
                                 ParentID = C.PARENTRIGHTID,
@@ -31,13 +31,15 @@ namespace AnPan.WebApi.Controllers
                                 NavUrl = C.NAVIGATEURL,
                                 SystemID = C.RIGHTID,
                                 ImageUrl = C.IMAGEURL,
-                                ParentName = D.RIGHTNAME
+                                ParentName = D.RIGHTNAME,
                             };
 
                 //return JsonConvert.SerializeObject(query.ToList());
-                var firstMenu = query.GroupBy(p =>new  {p.ParentID,p.ParentName}).Select(q => new {q.Key});
+                var firstMenu = query.Where(q=>q.ParentID!=0).GroupBy(p =>new  {p.ParentID,p.ParentName}).Select(q => new {q.Key});
 
                 List<RightModel> result = new List<RightModel>();
+
+                var parentList = db.UT_SYS_RIGHT.Where(p => p.PARENTRIGHTID == 0).ToList();
 
                 firstMenu.ToList().ForEach(p =>
                 {
@@ -45,7 +47,7 @@ namespace AnPan.WebApi.Controllers
                     {
                         ParentID = p.Key.ParentID,
                         Name = p.Key.ParentName,
-
+                        ImageUrl = parentList.FirstOrDefault(q=>q.RIGHTID == p.Key.ParentID).IMAGEURL,
                         ChildList = query.Where(q => q.ParentID == p.Key.ParentID).ToList()
                     });
                 });
