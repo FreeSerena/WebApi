@@ -37,5 +37,10 @@ namespace AnPan.Web.Controllers
                 return Content("");
         }
 
+        public ActionResult LogOff()
+        {
+            return View();
+        }
+
     }
 }
