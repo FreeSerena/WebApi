@@ -30,8 +30,11 @@ namespace AnPan.WebApi.Controllers
                                 Name = C.RIGHTNAME,
                                 NavUrl = C.NAVIGATEURL,
                                 SystemID = C.RIGHTID,
+                                ImageUrl = C.IMAGEURL,
                                 ParentName = D.RIGHTNAME
                             };
+
+                //return JsonConvert.SerializeObject(query.ToList());
                 var firstMenu = query.GroupBy(p =>new  {p.ParentID,p.ParentName}).Select(q => new {q.Key});
 
                 List<RightModel> result = new List<RightModel>();
@@ -46,7 +49,7 @@ namespace AnPan.WebApi.Controllers
                         ChildList = query.Where(q => q.ParentID == p.Key.ParentID).ToList()
                     });
                 });
-                return JsonConvert.SerializeObject(result);
+                return  JsonConvert.SerializeObject(result);
             }
 
             

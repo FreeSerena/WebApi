@@ -20,6 +20,12 @@ namespace AnPan.Entity.CustomModel
         public decimal ParentID { get; set; }
         public string Name { get; set; }
         public string NavUrl { get; set; }
+        public string ImageUrl { get; set; }
         public string ParentName { get; set; }
+    }
+
+    public class A
+    {
+        public List<SysRight> result { get; set; }
     }
 }

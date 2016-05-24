@@ -1,0 +1,21 @@
+﻿@using AnPan.Base;
+@model AnPan.Web.Models.ModelSysRight
+
+@{
+    Layout = null;
+}
+
+@foreach (var item in SessionManager.GridSource)
+{
+    <dl class="system_log">
+        <dt onclick="changeImage()">@item.Name<img src="/images/left/select_xl01.png"></dt>
+        @*<dd class="first_dd"><a href="#">充值记录</a></dd>
+        
+        <dd><a href="#">消费记录</a></dd>
+        <dd><a href="#">操作记录</a></dd>*@
+        @foreach (var child in item.ChildList)
+        {
+             <dd><a href="@child.NavUrl">@child.Name</a></dd>
+        }
+    </dl>
+}

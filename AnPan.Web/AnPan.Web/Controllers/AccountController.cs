@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 using AnPan.Entity;
 using AnPan.Entity.CustomModel;
+using AnPan.Base;
 
 namespace AnPan.Web.Controllers
 {
@@ -25,11 +26,11 @@ namespace AnPan.Web.Controllers
         [HttpPost]
         public ActionResult Login(ModelAccount model, FormCollection collection)
         {
-            string xx = ApiHelper.Get(ApiHelper.ApiUrl + "SysMenu/GetSysMenu?userID=1").Replace("\\","");
-            var re = JsonConvert.DeserializeObject<RightModel>(xx);
-            string result = ApiHelper.Post(ApiHelper.ApiUrl + "Account/Login", JsonConvert.SerializeObject(model.User));
+            string result = ApiHelper<int>.Post( "Account/Login", JsonConvert.SerializeObject(model.User));
             if (String.IsNullOrEmpty(result))
             {
+                SessionManager.CurrentUser.USERID = 1;
+                SessionManager.GridSource = ApiHelper<RightModel>.GetModel(String.Format("SysMenu/GetSysMenu?userID={0}", SessionManager.CurrentUser.USERID));
                 return Redirect("/Home/Index");
             }
             else
