@@ -2,6 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="../Scripts/jquery-ui-1.8.24.min.js"></script>
     <style type="text/css">
         @font-face {
             font-family: myFont;
@@ -43,9 +47,30 @@
                 margin: 0 20px 0 0;
             }
     </style>
+    <script type="text/javascript">
+        $(function () {
+            $("#div2").dialog({
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true,
+                buttons: {
+                    "Delete all items": function () {
+                        //这里可以加入一些操作
+                        $(this).dialog("close");
+                    },
+                    Cancel: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        })
+    </script>
 </head>
 <body>
     <div id="div1">Other Content</div>
     <p class="box">审核通过</p>
+
+    <div id="div2">我是弹出框</div>
 </body>
 </html>
