@@ -26,20 +26,24 @@ namespace AnPan.Web.Controllers
         [HttpPost]
         public ActionResult Login(ModelAccount model, FormCollection collection)
         {
-            string result = ApiHelper<int>.Post( "Account/Login", JsonConvert.SerializeObject(model.User));
-            if (String.IsNullOrEmpty(result))
-            {
-                SessionManager.CurrentUser.USERID = 1;
-                SessionManager.GridSource = ApiHelper<RightModel>.GetModel(String.Format("SysMenu/GetSysMenu?userID={0}", SessionManager.CurrentUser.USERID));
-                return Redirect("/Home/Index");
-            }
-            else
+            var user = ApiHelper<UT_SYS_USER>.GetEntity(String.Format("Account/Login?account={0}", model.User.ACCOUNT));
+
+            if (user == null)
                 return Content("");
+            SessionManager.CurrentUser = user;
+            //SessionManager.GridSource = ApiHelper<RightModel>.GetModel(String.Format("SysMenu/GetSysMenu?userID={0}", Convert.ToInt32(SessionManager.CurrentUser.USERID)));
+            return Redirect("/Home/Index");
         }
 
         public ActionResult LogOff()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult AnjularPostData()
+        {
+            return Json(ApiHelper<RightModel>.GetModel(String.Format("SysMenu/GetSysMenu?userID={0}", Convert.ToInt32(SessionManager.CurrentUser.USERID))));
         }
 
     }

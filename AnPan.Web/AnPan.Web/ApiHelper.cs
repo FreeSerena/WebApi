@@ -37,6 +37,15 @@ namespace AnPan.Web
             }
         }
 
+        public static T GetEntity(string postURL)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string content = client.GetStringAsync(ApiUrl + postURL).Result.Replace("\\", "").TrimStart('"').TrimEnd('"');
+                return JsonConvert.DeserializeObject<T>(content);
+            }
+        }
+
         public static String Post(string action, string postString)
         {
             using (HttpClient client = new HttpClient())

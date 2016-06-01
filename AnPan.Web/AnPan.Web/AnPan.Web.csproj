@@ -196,6 +196,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularController\IndexController.js" />
     <Content Include="Content\base\home.css" />
     <Content Include="Content\base\login.css" />
     <Content Include="Content\bootstrap-datepicker.css" />
