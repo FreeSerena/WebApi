@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/base/home.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-1.9.1.js"></script>
-    <script src="~/Scripts/angular.js"></script>
+    @*<script src="~/Scripts/angular.js"></script>*@
     <script type="text/javascript">
         $(".leftsidebar_box dt").css({ "background-color": "#3992d0" });
         $(".leftsidebar_box dt img").attr("src", "/images/left/select_xl01.png");
@@ -25,13 +25,14 @@
             });
         })
 
-        angular.module('menuApp', []).controller('menuController', function ($scope, $http) {
-            $http.post('/Account/AnjularPostData')
-                        .success(function (msg) {
-                            $scope.GridSources = msg
-                        });
+        //angular.module('menuApp', []).controller('menuController', function ($scope, $http) {
+        //    $http.post('/Account/AnjularPostData')
+        //                .success(function (msg) {
+        //                    $scope.GridSources = msg
+        //                    $scope.Path = "/Images/icon-app/"
+        //                });
 
-        });
+        //});
     </script>
 </head>
 <body>
@@ -41,12 +42,12 @@
         </div>
         <div class="leftsidebar_box" ng-app="menuApp" ng-controller="menuController">
             <div class="line"></div>
-            @*@RenderPage("~/Views/SysMenu/SysMenu.cshtml");*@
+            @RenderPage("~/Views/SysMenu/SysMenu.cshtml");
             @*@string url = "/Images/icon-app/" + item.ImageUrl;*@
-            <dl class="system_log" ng-repeat="item in GridSources">
-                <dt onclick="changeImage()" style='background-image: url("");'>{{item.Name}}<img src="/images/left/select_xl01.png"></dt>
+            @*<dl class="system_log" ng-repeat="item in GridSources">
+                <dt onclick="changeImage()" >{{item.Name}}<img src="/images/left/select_xl01.png"></dt>
                 <dd ng-repeat="child in item.ChildList"><a href="{{child.NavUrl}}">{{child.Name}}</a></dd>
-            </dl>
+            </dl>*@
         </div>
         <div class="rightsidebar-box">
             @RenderBody()

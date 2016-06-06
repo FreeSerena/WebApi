@@ -31,7 +31,7 @@ namespace AnPan.Web.Controllers
             if (user == null)
                 return Content("");
             SessionManager.CurrentUser = user;
-            //SessionManager.GridSource = ApiHelper<RightModel>.GetModel(String.Format("SysMenu/GetSysMenu?userID={0}", Convert.ToInt32(SessionManager.CurrentUser.USERID)));
+            SessionManager.GridSource = ApiHelper<RightModel>.GetModel(String.Format("SysMenu/GetSysMenu?userID={0}", Convert.ToInt32(SessionManager.CurrentUser.USERID)));
             return Redirect("/Home/Index");
         }
 
